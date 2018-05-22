@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="..\gtest\flags.cpp">
+      <Filter>gtest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gtest\gtest-all.cc">
+      <Filter>gtest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\config\bs_config.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\signalrcpp\hub_initor\hub_initor_impl.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\string\utf8_string.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\thread\task_thread.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\thread\thread_cond.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\thread\thread_event.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\thread\thread_mutex.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\strategy\ctp-strategy.cpp">
+      <Filter>strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\strategy\ctp-strategy-range.cpp">
+      <Filter>strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ctp-log\ctp-log.cpp">
+      <Filter>ctp-log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\strategy\ctp-strategy-range2.cpp">
+      <Filter>strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\strategy\ctp-strategy-range2-order.cpp">
+      <Filter>strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="ctp-future-main.cpp" />
+    <ClCompile Include="ctp-spread-print-main.cpp" />
+    <ClCompile Include="ctp-spread-test-main.cpp" />
+    <ClCompile Include="ctp-spread-main.cpp" />
+    <ClCompile Include="ctp-market-app-main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="..\gtest\flags.h">
+      <Filter>gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gtest\gtest.h">
+      <Filter>gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\config\bs_config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\strategy\ctp-strategy.h">
+      <Filter>strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\strategy\ctp-strategy-range.h">
+      <Filter>strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ctp-log\ctp-log.h">
+      <Filter>ctp-log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\strategy\ctp-strategy-range2.h">
+      <Filter>strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\strategy\ctp-strategy-range2-order.h">
+      <Filter>strategy</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="gtest">
+      <UniqueIdentifier>{825af1f3-5837-458e-8930-6a77e6abb41f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{52638a8e-0317-4f87-8dd1-62f14188e9bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="strategy">
+      <UniqueIdentifier>{e1d39e45-1725-4a63-a821-6a143ce8430a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ctp-log">
+      <UniqueIdentifier>{9ef9159d-72c8-44de-b0f0-5aef5ded0f12}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

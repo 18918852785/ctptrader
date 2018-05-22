@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="..\..\include\config\bs_config.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\string\utf8_string.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\indicator\zmq\zmq_publish.cpp">
+      <Filter>zmq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\thread\task_thread.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\thread\thread_mutex.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\thread\thread_event.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\thread\thread_cond.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\signalrcpp\hub_initor\hub_initor_impl.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ctp-log\ctp-log.cpp">
+      <Filter>ctp-log</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="..\..\include\config\bs_config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="zmq_publisher.h" />
+    <ClInclude Include="..\..\indicator\zmq\zmq_handler.h">
+      <Filter>zmq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ctp-log\ctp-log.h">
+      <Filter>ctp-log</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{7286d2ad-ace3-48cf-a821-4808f47002d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zmq">
+      <UniqueIdentifier>{64c9f8d2-51b1-4466-be67-e13005d5835c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ctp-log">
+      <UniqueIdentifier>{42f8860d-ace1-4dd8-b3e0-492de718b89c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

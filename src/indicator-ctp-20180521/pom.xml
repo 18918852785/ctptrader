@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cn.indicator</groupId>
+  <artifactId>indicator-ctp</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+  <name>indicator-ctp</name>
+  <description>
+  </description>
+    <parent>
+        <groupId>cn.indicator</groupId>
+        <artifactId>indicator-parent</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../indicator-parent</relativePath>
+    </parent>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>compile</id>
+            <phase>compile</phase>
+            <configuration>
+              <tasks>
+                <exec dir="." executable="cmd.exe" failonerror="true"><arg line="/c build.bat"/></exec>
+              </tasks>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>        
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

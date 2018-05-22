@@ -1,0 +1,2281 @@
+[r1]on_spread_change: time = 09:01:10, buy = -43, sell = -41, ret=0
+--->>> 报单录入请求: instrumentID=SP m1809&m1901,open,price=-38,order ref=4, 0, 成功
+--->>> OnRtnOrder InstrumentID=SP m1809&m1901,  OrderStatus = a, IsTradingOrder == true,
+trader callback: event id=5
+--->>> OnRtnOrder InstrumentID=SP m1809&m1901,  OrderStatus = 3, IsTradingOrder == true,
+trader callback: event id=5
+--->>> OnRtnOrder InstrumentID=SP m1809&m1901,  OrderStatus = 0,
+trader callback: event id=5
+--->>> OnRtnTrade:  成交 InstrumentID=m1901,  OrderRef=4,  price = 3194,
+trader callback: event id=6
+--->>> OnRtnTrade:  成交 InstrumentID=m1809,  OrderRef=4,  price = 3154,
+trader callback: event id=6
+
+
+[r1]on_spread_change: time = 09:11:24, buy = -36, sell = -34, ret=0
+--->>> 报单录入请求: instrumentID=SP m1809&m1901,close,price=-39,order ref=4, 0, 成功
+
+>>OnRtnOrder InstrumentID=SP m1809&m1901,  OrderStatus = a, IsTradingOrder == true,
+trader callback: event id=5
+--->>> OnRtnOrder InstrumentID=SP m1809&m1901,  OrderStatus = 3, IsTradingOrder == true,
+trader callback: event id=5
+--->>> OnRtnOrder InstrumentID=SP m1809&m1901,  OrderStatus = 0,
+trader callback: event id=5
+--->>> OnRtnTrade:  成交 InstrumentID=m1901,  OrderRef=4,  price = 3184,
+trader callback: event id=6
+--->>> OnRtnTrade:  成交 InstrumentID=m1809,  OrderRef=4,  price = 3148,
+trader callback: event id=6
+
+
+W:\indicator-server\src-r1-p\Release2
+-> r1-p.bat
+
+pushd W:\INDICA~1\src-r1-p\Release2\
+
+WindowsTraderApi.exe --simnow=false  --range="-1,-41,3,5;-25,-36,3,5;-10,-31,3,5"
+ ****** 徽商期货 交易**************************************************
+ ****** 徽商期货 交易**************************************************
+
+*************** strategy [r1] 启动 ...
+load position from file : W:\INDICA~1\src-r1-p\Release2\r1-p.txt
+ range is high = -1 ,low = -41 ,price_det = 3 ,profit = 5
+
+*************** strategy [r2] 启动 ...
+load position from file : W:\INDICA~1\src-r1-p\Release2\r2-p.txt
+ range is high = -25 ,low = -36 ,price_det = 3 ,profit = 5
+
+*************** strategy [r3] 启动 ...
+load position from file : W:\INDICA~1\src-r1-p\Release2\r3-p.txt
+ range is high = -10 ,low = -31 ,price_det = 3 ,profit = 5
+set_codes count=4
+code#  0 : m1809
+code#  1 : m1901
+code#  2 : m1805
+code#  3 : SP m1809&m1901
+--->>> OnFrontConnected
+--->>> 发送用户登录请求: 0, 成功
+--->>> OnRspUserLogin
+--->>> 获取当前交易日 = 20180427
+--->>> 投资者结算结果确认: 0, 成功
+--->>> OnRspSettlementInfoConfirm
+trader callback: event id=1
+--->>> 请求查询合约: 0, 成功
+--->>> OnRspQryInstrument: DCE.m1809-P-3500
+--->>> OnRspQryInstrument: DCE.m1809-C-3500
+--->>> OnRspQryInstrument: DCE.m1809-C-2400
+--->>> OnRspQryInstrument: DCE.m1809-P-2400
+--->>> OnRspQryInstrument: DCE.m1809-P-2850
+--->>> OnRspQryInstrument: DCE.m1809-P-2800
+--->>> OnRspQryInstrument: DCE.m1809-P-2750
+--->>> OnRspQryInstrument: DCE.m1809-P-2700
+--->>> OnRspQryInstrument: DCE.m1809-P-2650
+--->>> OnRspQryInstrument: DCE.m1809-P-2600
+--->>> OnRspQryInstrument: DCE.m1809-P-2550
+--->>> OnRspQryInstrument: DCE.m1809-P-2500
+--->>> OnRspQryInstrument: DCE.m1809-C-2950
+--->>> OnRspQryInstrument: DCE.m1809-C-2900
+--->>> OnRspQryInstrument: DCE.m1809-C-2850
+--->>> OnRspQryInstrument: DCE.m1809-C-2800
+--->>> OnRspQryInstrument: DCE.m1809-C-2750
+--->>> OnRspQryInstrument: DCE.m1809-C-2700
+--->>> OnRspQryInstrument: DCE.m1809-C-2650
+--->>> OnRspQryInstrument: DCE.m1809-C-2600
+--->>> OnRspQryInstrument: DCE.m1809-C-2550
+--->>> OnRspQryInstrument: DCE.m1809-C-2500
+--->>> OnRspQryInstrument: DCE.m1809-P-2950
+--->>> OnRspQryInstrument: DCE.m1809-P-2900
+--->>> OnRspQryInstrument: DCE.m1809-P-3000
+--->>> OnRspQryInstrument: DCE.m1809-C-3000
+--->>> OnRspQryInstrument: DCE.m1809-P-3100
+--->>> OnRspQryInstrument: DCE.m1809-C-3100
+--->>> OnRspQryInstrument: DCE.m1809-P-3150
+--->>> OnRspQryInstrument: DCE.m1809-C-3150
+--->>> OnRspQryInstrument: DCE.m1809-P-3300
+--->>> OnRspQryInstrument: DCE.m1809-P-3250
+--->>> OnRspQryInstrument: DCE.m1809-C-3300
+--->>> OnRspQryInstrument: DCE.m1809-C-3250
+--->>> OnRspQryInstrument: DCE.m1809-P-3200
+--->>> OnRspQryInstrument: DCE.m1809-C-3200
+--->>> OnRspQryInstrument: DCE.m1809-P-3600
+--->>> OnRspQryInstrument: DCE.m1809-C-3600
+--->>> OnRspQryInstrument: DCE.m1809
+--->>> OnRspQryInstrument: DCE.m1809-C-3550
+--->>> OnRspQryInstrument: DCE.m1809-P-3550
+--->>> OnRspQryInstrument: DCE.m1809-P-3450
+--->>> OnRspQryInstrument: DCE.m1809-P-3400
+--->>> OnRspQryInstrument: DCE.m1809-C-3450
+--->>> OnRspQryInstrument: DCE.m1809-C-3400
+--->>> OnRspQryInstrument: DCE.m1809-P-3050
+--->>> OnRspQryInstrument: DCE.m1809-P-2450
+--->>> OnRspQryInstrument: DCE.m1809-C-3050
+--->>> OnRspQryInstrument: DCE.m1809-C-2450
+--->>> OnRspQryInstrument: DCE.m1809-P-3350
+--->>> OnRspQryInstrument: DCE.m1809-C-3350
+--->>> 请求查询资金账户: -3, 受到流控
+--->>> 请求查询资金账户: 0, 成功
+--->>> OnRspQryTradingAccount: Available = 333361
+trader callback: event id=2
+账单确认完毕
+ ****** 徽商期货 行情**************************************************
+Press any key to order.
+--->>> OnFrontConnected
+--->>> 发送用户登录请求: 成功
+--->>> OnRspUserLogin
+--->>> 获取当前交易日 = 20180427
+--->>> 发送行情订阅请求: m1809,m1901,m1805,SP m1809&m1901, 成功
+OnRspSubMarketData
+OnRspSubMarketData
+OnRspSubMarketData
+OnRspSubMarketData
+.[r1]on_spread_change: time = 23:29:59, buy = -40, sell = -37, ret=-1
+[r2]on_spread_change: time = 23:29:59, buy = -40, sell = -37, ret=-1
+[r3]on_spread_change: time = 23:29:59, buy = -40, sell = -37, ret=-1
+
+ctp,           m1901,9003,23:29:59.805,        0, 3198 , 3200 , -40  , -37
+...[r1]on_spread_change: time = 09:00:00, buy = -39, sell = -34, ret=-1
+[r2]on_spread_change: time = 09:00:00, buy = -39, sell = -34, ret=-1
+[r3]on_spread_change: time = 09:00:00, buy = -39, sell = -34, ret=-1
+
+ctp,           m1809,9003,09:00:00.115,        0, 3161 , 3164 , -39  , -34
+[r1]on_spread_change: time = 09:00:00, buy = -42, sell = -38, ret=-1
+[r2]on_spread_change: time = 09:00:00, buy = -42, sell = -38, ret=-1
+[r3]on_spread_change: time = 09:00:00, buy = -42, sell = -38, ret=-1
+ctp,           m1901,9003,09:00:00.113,        0, 3202 , 3203 , -42  , -38
+..[r1]on_spread_change: time = 09:00:00, buy = -41, sell = -39, ret=-1
+[r2]on_spread_change: time = 09:00:00, buy = -41, sell = -39, ret=-1
+[r3]on_spread_change: time = 09:00:00, buy = -41, sell = -39, ret=-1
+
+ctp,           m1809,9003,09:00:00.616,        0, 3162 , 3163 , -41  , -39
+[r1]on_spread_change: time = 09:00:00, buy = -40, sell = -37, ret=-1
+[r2]on_spread_change: time = 09:00:00, buy = -40, sell = -37, ret=-1
+[r3]on_spread_change: time = 09:00:00, buy = -40, sell = -37, ret=-1
+ctp,           m1901,9003,09:00:00.616,        0, 3200 , 3202 , -40  , -37
+.....[r1]on_spread_change: time = 09:00:01, buy = -41, sell = -38, ret=-1
+[r2]on_spread_change: time = 09:00:01, buy = -41, sell = -38, ret=-1
+[r3]on_spread_change: time = 09:00:01, buy = -41, sell = -38, ret=-1
+
+ctp,           m1809,9003,09:00:01.606,        0, 3161 , 3162 , -41  , -38
+...[r1]on_spread_change: time = 09:00:02, buy = -40, sell = -38, ret=-1
+[r2]on_spread_change: time = 09:00:02, buy = -40, sell = -38, ret=-1
+[r3]on_spread_change: time = 09:00:02, buy = -40, sell = -38, ret=-1
+
+ctp,           m1901,9003,09:00:02.075,        0, 3200 , 3201 , -40  , -38
+[r1]on_spread_change: time = 09:00:02, buy = -39, sell = -37, ret=-1
+[r2]on_spread_change: time = 09:00:02, buy = -39, sell = -37, ret=-1
+[r3]on_spread_change: time = 09:00:02, buy = -39, sell = -37, ret=-1
+ctp,           m1809,9003,09:00:02.612,        0, 3162 , 3163 , -39  , -37
+[r1]on_spread_change: time = 09:00:02, buy = -40, sell = -37, ret=-1
+[r2]on_spread_change: time = 09:00:02, buy = -40, sell = -37, ret=-1
+[r3]on_spread_change: time = 09:00:02, buy = -40, sell = -37, ret=-1
+ctp,           m1901,9003,09:00:02.602,        0, 3200 , 3202 , -40  , -37
+...................[r1]on_spread_change: time = 09:00:06, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:06, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:06, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:00:06.094,        0, 3201 , 3202 , -40  , -38
+.[r1]on_spread_change: time = 09:00:06, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:06, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:06, buy = -41, sell = -38, ret=0
+
+ctp,           m1901,9003,09:00:06.591,        0, 3201 , 3203 , -41  , -38
+.[r1]on_spread_change: time = 09:00:07, buy = -40, sell = -37, ret=0
+[r2]on_spread_change: time = 09:00:07, buy = -40, sell = -37, ret=0
+[r3]on_spread_change: time = 09:00:07, buy = -40, sell = -37, ret=0
+
+ctp,           m1809,9003,09:00:07.089,        0, 3163 , 3164 , -40  , -37
+.[r1]on_spread_change: time = 09:00:07, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:07, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:07, buy = -41, sell = -38, ret=0
+
+ctp,           m1809,9003,09:00:07.604,        0, 3162 , 3163 , -41  , -38
+[r1]on_spread_change: time = 09:00:07, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:07, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:07, buy = -40, sell = -38, ret=0
+ctp,           m1901,9003,09:00:07.604,        0, 3201 , 3202 , -40  , -38
+.[r1]on_spread_change: time = 09:00:08, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:00:08, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:00:08, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:00:08.096,        0, 3161 , 3162 , -41  , -39
+......[r1]on_spread_change: time = 09:00:09, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:09, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:09, buy = -41, sell = -38, ret=0
+
+ctp,           m1901,9003,09:00:09.591,        0, 3200 , 3202 , -41  , -38
+[r1]on_spread_change: time = 09:00:10, buy = -40, sell = -37, ret=0
+[r2]on_spread_change: time = 09:00:10, buy = -40, sell = -37, ret=0
+[r3]on_spread_change: time = 09:00:10, buy = -40, sell = -37, ret=0
+ctp,           m1809,9003,09:00:10.105,        0, 3162 , 3163 , -40  , -37
+.......[r1]on_spread_change: time = 09:00:11, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:11, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:11, buy = -41, sell = -38, ret=0
+
+ctp,           m1809,9003,09:00:11.608,        0, 3161 , 3162 , -41  , -38
+[r1]on_spread_change: time = 09:00:11, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:11, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:11, buy = -40, sell = -38, ret=0
+ctp,           m1901,9003,09:00:11.608,        0, 3200 , 3201 , -40  , -38
+.............[r1]on_spread_change: time = 09:00:15, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:00:15, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:00:15, buy = -39, sell = -37, ret=0
+
+ctp,           m1809,9003,09:00:15.093,        0, 3162 , 3163 , -39  , -37
+[r1]on_spread_change: time = 09:00:15, buy = -40, sell = -37, ret=0
+[r2]on_spread_change: time = 09:00:15, buy = -40, sell = -37, ret=0
+[r3]on_spread_change: time = 09:00:15, buy = -40, sell = -37, ret=0
+ctp,           m1901,9003,09:00:15.093,        0, 3200 , 3202 , -40  , -37
+.................[r1]on_spread_change: time = 09:00:18, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:18, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:18, buy = -41, sell = -38, ret=0
+
+ctp,           m1809,9003,09:00:18.594,        0, 3161 , 3162 , -41  , -38
+[r1]on_spread_change: time = 09:00:18, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:18, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:18, buy = -40, sell = -38, ret=0
+ctp,           m1901,9003,09:00:18.587,        0, 3200 , 3201 , -40  , -38
+............[r1]on_spread_change: time = 09:00:22, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:00:22, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:00:22, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:00:22.114,        0, 3160 , 3161 , -41  , -39
+[r1]on_spread_change: time = 09:00:22, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:22, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:22, buy = -41, sell = -38, ret=0
+ctp,           m1901,9003,09:00:22.104,        0, 3199 , 3201 , -41  , -38
+..[r1]on_spread_change: time = 09:00:22, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:22, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:22, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:00:22.589,        0, 3199 , 3200 , -40  , -38
+........[r1]on_spread_change: time = 09:00:25, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:00:25, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:00:25, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:00:25.105,        0, 3159 , 3160 , -41  , -39
+[r1]on_spread_change: time = 09:00:25, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:25, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:25, buy = -40, sell = -38, ret=0
+ctp,           m1901,9003,09:00:25.096,        0, 3198 , 3199 , -40  , -38
+.[r1]on_spread_change: time = 09:00:25, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:00:25, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:00:25, buy = -39, sell = -37, ret=0
+
+ctp,           m1809,9003,09:00:25.615,        0, 3160 , 3161 , -39  , -37
+.[r1]on_spread_change: time = 09:00:26, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:26, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:26, buy = -40, sell = -38, ret=0
+
+ctp,           m1809,9003,09:00:26.093,        0, 3159 , 3160 , -40  , -38
+................[r1]on_spread_change: time = 09:00:31, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:00:31, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:00:31, buy = -39, sell = -37, ret=0
+
+ctp,           m1901,9003,09:00:31.108,        0, 3197 , 3198 , -39  , -37
+........[r1]on_spread_change: time = 09:00:33, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:33, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:33, buy = -40, sell = -38, ret=0
+
+ctp,           m1809,9003,09:00:33.614,        0, 3158 , 3159 , -40  , -38
+...........[r1]on_spread_change: time = 09:00:35, buy = -40, sell = -37, ret=0
+[r2]on_spread_change: time = 09:00:35, buy = -40, sell = -37, ret=0
+[r3]on_spread_change: time = 09:00:35, buy = -40, sell = -37, ret=0
+
+ctp,           m1901,9003,09:00:35.615,        0, 3196 , 3198 , -40  , -37
+.[r1]on_spread_change: time = 09:00:36, buy = -42, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:36, buy = -42, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:36, buy = -42, sell = -38, ret=0
+
+ctp,           m1809,9003,09:00:36.108,        0, 3156 , 3158 , -42  , -38
+[r1]on_spread_change: time = 09:00:36, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:36, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:36, buy = -41, sell = -38, ret=0
+ctp,           m1901,9003,09:00:36.095,        0, 3196 , 3197 , -41  , -38
+.....[r1]on_spread_change: time = 09:00:37, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:37, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:37, buy = -40, sell = -38, ret=0
+
+ctp,           m1809,9003,09:00:37.109,        0, 3157 , 3158 , -40  , -38
+......[r1]on_spread_change: time = 09:00:39, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:00:39, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:00:39, buy = -39, sell = -37, ret=0
+
+ctp,           m1809,9003,09:00:39.093,        0, 3158 , 3159 , -39  , -37
+[r1]on_spread_change: time = 09:00:39, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:00:39, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:00:39, buy = -41, sell = -39, ret=0
+ctp,           m1901,9003,09:00:39.021,        0, 3198 , 3199 , -41  , -39
+.[r1]on_spread_change: time = 09:00:39, buy = -42, sell = -39, ret=0
+[r2]on_spread_change: time = 09:00:39, buy = -42, sell = -39, ret=0
+[r3]on_spread_change: time = 09:00:39, buy = -42, sell = -39, ret=0
+
+ctp,           m1809,9003,09:00:39.596,        0, 3157 , 3159 , -42  , -39
+[r1]on_spread_change: time = 09:00:39, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:39, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:39, buy = -41, sell = -38, ret=0
+ctp,           m1901,9003,09:00:39.596,        0, 3197 , 3198 , -41  , -38
+.[r1]on_spread_change: time = 09:00:40, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:00:40, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:00:40, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:00:40.113,        0, 3157 , 3158 , -41  , -39
+[r1]on_spread_change: time = 09:00:40, buy = -42, sell = -39, ret=0
+[r2]on_spread_change: time = 09:00:40, buy = -42, sell = -39, ret=0
+[r3]on_spread_change: time = 09:00:40, buy = -42, sell = -39, ret=0
+ctp,           m1901,9003,09:00:40.113,        0, 3197 , 3199 , -42  , -39
+.....[r1]on_spread_change: time = 09:00:41, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:41, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:41, buy = -41, sell = -38, ret=0
+
+ctp,           m1809,9003,09:00:41.612,        0, 3158 , 3159 , -41  , -38
+[r1]on_spread_change: time = 09:00:41, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:41, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:41, buy = -40, sell = -38, ret=0
+ctp,           m1901,9003,09:00:41.604,        0, 3197 , 3198 , -40  , -38
+..[r1]on_spread_change: time = 09:00:42, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:00:42, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:00:42, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:00:42.114,        0, 3157 , 3158 , -41  , -39
+.............[r1]on_spread_change: time = 09:00:45, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:00:45, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:00:45, buy = -39, sell = -37, ret=0
+
+ctp,           m1809,9003,09:00:45.111,        0, 3159 , 3160 , -39  , -37
+[r1]on_spread_change: time = 09:00:45, buy = -40, sell = -37, ret=0
+[r2]on_spread_change: time = 09:00:45, buy = -40, sell = -37, ret=0
+[r3]on_spread_change: time = 09:00:45, buy = -40, sell = -37, ret=0
+ctp,           m1901,9003,09:00:45.111,        0, 3197 , 3199 , -40  , -37
+.[r1]on_spread_change: time = 09:00:45, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:45, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:45, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:00:45.607,        0, 3198 , 3199 , -40  , -38
+..[r1]on_spread_change: time = 09:00:46, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:00:46, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:00:46, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:00:46.605,        0, 3158 , 3159 , -41  , -39
+.[r1]on_spread_change: time = 09:00:47, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:47, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:47, buy = -40, sell = -38, ret=0
+
+ctp,           m1809,9003,09:00:47.074,        0, 3159 , 3160 , -40  , -38
+.[r1]on_spread_change: time = 09:00:47, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:00:47, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:00:47, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:00:47.598,        0, 3158 , 3159 , -41  , -39
+....[r1]on_spread_change: time = 09:00:48, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:48, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:48, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:00:48.599,        0, 3197 , 3198 , -40  , -38
+........[r1]on_spread_change: time = 09:00:51, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:00:51, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:00:51, buy = -41, sell = -39, ret=0
+
+ctp,           m1901,9003,09:00:51.584,        0, 3198 , 3199 , -41  , -39
+....[r1]on_spread_change: time = 09:00:52, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:52, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:52, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:00:52.585,        0, 3197 , 3198 , -40  , -38
+.[r1]on_spread_change: time = 09:00:53, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:00:53, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:00:53, buy = -41, sell = -39, ret=0
+
+ctp,           m1901,9003,09:00:53.087,        0, 3198 , 3199 , -41  , -39
+.....[r1]on_spread_change: time = 09:00:54, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:54, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:54, buy = -40, sell = -38, ret=0
+
+ctp,           m1809,9003,09:00:54.608,        0, 3159 , 3160 , -40  , -38
+........[r1]on_spread_change: time = 09:00:56, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:00:56, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:00:56, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:00:56.560,        0, 3158 , 3159 , -41  , -39
+.......[r1]on_spread_change: time = 09:00:58, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:00:58, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:00:58, buy = -40, sell = -38, ret=0
+
+ctp,           m1809,9003,09:00:58.615,        0, 3159 , 3160 , -40  , -38
+..........[r1]on_spread_change: time = 09:01:01, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:01:01, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:01:01, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:01:01.096,        0, 3158 , 3159 , -41  , -39
+[r1]on_spread_change: time = 09:01:01, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:01:01, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:01:01, buy = -41, sell = -38, ret=0
+ctp,           m1901,9003,09:01:01.096,        0, 3197 , 3199 , -41  , -38
+....[r1]on_spread_change: time = 09:01:02, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:01:02, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:01:02, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:01:02.099,        0, 3197 , 3198 , -40  , -38
+........[r1]on_spread_change: time = 09:01:04, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:01:04, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:01:04, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:01:04.587,        0, 3157 , 3158 , -41  , -39
+....[r1]on_spread_change: time = 09:01:05, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:01:05, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:01:05, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:01:05.586,        0, 3196 , 3197 , -40  , -38
+[r1]on_spread_change: time = 09:01:06, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:01:06, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:01:06, buy = -41, sell = -38, ret=0
+ctp,           m1809,9003,09:01:06.104,        0, 3156 , 3158 , -41  , -38
+.[r1]on_spread_change: time = 09:01:06, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:01:06, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:01:06, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:01:06.613,        0, 3156 , 3157 , -41  , -39
+.....[r1]on_spread_change: time = 09:01:08, buy = -42, sell = -40, ret=0
+[r2]on_spread_change: time = 09:01:08, buy = -42, sell = -40, ret=0
+[r3]on_spread_change: time = 09:01:08, buy = -42, sell = -40, ret=0
+
+ctp,           m1809,9003,09:01:08.093,        0, 3155 , 3156 , -42  , -40
+[r1]on_spread_change: time = 09:01:08, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:01:08, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:01:08, buy = -41, sell = -39, ret=0
+ctp,           m1901,9003,09:01:08.093,        0, 3195 , 3196 , -41  , -39
+.[r1]on_spread_change: time = 09:01:08, buy = -42, sell = -40, ret=0
+[r2]on_spread_change: time = 09:01:08, buy = -42, sell = -40, ret=0
+[r3]on_spread_change: time = 09:01:08, buy = -42, sell = -40, ret=0
+
+ctp,           m1809,9003,09:01:08.612,        0, 3154 , 3155 , -42  , -40
+.....
+[r1]on_spread_change: time = 09:01:10, buy = -43, sell = -41, ret=0
+--->>> 报单录入请求: instrumentID=SP m1809&m1901,open,price=-38,order ref=4, 0, 成功
+[r2]on_spread_change: time = 09:01:10, buy = -43, sell = -41, ret=0
+[r3]on_spread_change: time = 09:01:10, buy = -43, sell = -41, ret=0
+
+ctp,           m1809,9003,09:01:10.111,        0, 3153 , 3154 , -43  , -41
+[r1]on_spread_change: time = 09:01:10, buy = -42, sell = -40, ret=0
+[r2]on_spread_change: time = 09:01:10, buy = -42, sell = -40, ret=0
+[r3]on_spread_change: time = 09:01:10, buy = -42, sell = -40, ret=0
+ctp,           m1901,9003,09:01:10.104,        0, 3194 , 3195 , -42  , -40
+.
+--->>> OnRtnOrder InstrumentID=SP m1809&m1901,  OrderStatus = a, IsTradingOrder == true,
+trader callback: event id=5
+--->>> OnRtnOrder InstrumentID=SP m1809&m1901,  OrderStatus = 3, IsTradingOrder == true,
+trader callback: event id=5
+--->>> OnRtnOrder InstrumentID=SP m1809&m1901,  OrderStatus = 0,
+trader callback: event id=5
+--->>> OnRtnTrade:  成交 InstrumentID=m1901,  OrderRef=4,  price = 3194,
+trader callback: event id=6
+--->>> OnRtnTrade:  成交 InstrumentID=m1809,  OrderRef=4,  price = 3154,
+trader callback: event id=6
+........................
+[r1]on_spread_change: time = 09:01:15, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:01:15, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:01:15, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:01:15.108,        0, 3154 , 3155 , -41  , -39
+[r1]on_spread_change: time = 09:01:15, buy = -42, sell = -39, ret=0
+[r2]on_spread_change: time = 09:01:15, buy = -42, sell = -39, ret=0
+[r3]on_spread_change: time = 09:01:15, buy = -42, sell = -39, ret=0
+ctp,           m1901,9003,09:01:15.108,        0, 3194 , 3196 , -42  , -39
+...[r1]on_spread_change: time = 09:01:16, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:01:16, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:01:16, buy = -41, sell = -38, ret=0
+
+ctp,           m1809,9003,09:01:16.114,        0, 3155 , 3156 , -41  , -38
+[r1]on_spread_change: time = 09:01:16, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:01:16, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:01:16, buy = -41, sell = -39, ret=0
+ctp,           m1901,9003,09:01:16.076,        0, 3195 , 3196 , -41  , -39
+...[r1]on_spread_change: time = 09:01:17, buy = -42, sell = -40, ret=0
+[r2]on_spread_change: time = 09:01:17, buy = -42, sell = -40, ret=0
+[r3]on_spread_change: time = 09:01:17, buy = -42, sell = -40, ret=0
+
+ctp,           m1901,9003,09:01:17.111,        0, 3196 , 3197 , -42  , -40
+..[r1]on_spread_change: time = 09:01:17, buy = -42, sell = -39, ret=0
+[r2]on_spread_change: time = 09:01:17, buy = -42, sell = -39, ret=0
+[r3]on_spread_change: time = 09:01:17, buy = -42, sell = -39, ret=0
+
+ctp,           m1901,9003,09:01:17.596,        0, 3195 , 3197 , -42  , -39
+.[r1]on_spread_change: time = 09:01:18, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:01:18, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:01:18, buy = -41, sell = -39, ret=0
+
+ctp,           m1901,9003,09:01:18.080,        0, 3195 , 3196 , -41  , -39
+.....[r1]on_spread_change: time = 09:01:20, buy = -42, sell = -39, ret=0
+[r2]on_spread_change: time = 09:01:20, buy = -42, sell = -39, ret=0
+[r3]on_spread_change: time = 09:01:20, buy = -42, sell = -39, ret=0
+
+ctp,           m1809,9003,09:01:20.110,        0, 3154 , 3156 , -42  , -39
+.[r1]on_spread_change: time = 09:01:20, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:01:20, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:01:20, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:01:20.601,        0, 3155 , 3156 , -41  , -39
+........................................[r1]on_spread_change: time = 09:01:30, buy = -42, sell = -40, ret=0
+[r2]on_spread_change: time = 09:01:30, buy = -42, sell = -40, ret=0
+[r3]on_spread_change: time = 09:01:30, buy = -42, sell = -40, ret=0
+
+ctp,           m1901,9003,09:01:30.612,        0, 3196 , 3197 , -42  , -40
+.[r1]on_spread_change: time = 09:01:31, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:01:31, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:01:31, buy = -41, sell = -39, ret=0
+
+ctp,           m1901,9003,09:01:31.090,        0, 3195 , 3196 , -41  , -39
+.[r1]on_spread_change: time = 09:01:31, buy = -42, sell = -40, ret=0
+[r2]on_spread_change: time = 09:01:31, buy = -42, sell = -40, ret=0
+[r3]on_spread_change: time = 09:01:31, buy = -42, sell = -40, ret=0
+
+ctp,           m1901,9003,09:01:31.576,        0, 3196 , 3197 , -42  , -40
+...[r1]on_spread_change: time = 09:01:32, buy = -42, sell = -39, ret=0
+[r2]on_spread_change: time = 09:01:32, buy = -42, sell = -39, ret=0
+[r3]on_spread_change: time = 09:01:32, buy = -42, sell = -39, ret=0
+
+ctp,           m1901,9003,09:01:32.520,        0, 3195 , 3197 , -42  , -39
+.[r1]on_spread_change: time = 09:01:33, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:01:33, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:01:33, buy = -41, sell = -39, ret=0
+
+ctp,           m1901,9003,09:01:33.079,        0, 3195 , 3196 , -41  , -39
+.[r1]on_spread_change: time = 09:01:33, buy = -42, sell = -40, ret=0
+[r2]on_spread_change: time = 09:01:33, buy = -42, sell = -40, ret=0
+[r3]on_spread_change: time = 09:01:33, buy = -42, sell = -40, ret=0
+
+ctp,           m1901,9003,09:01:33.576,        0, 3196 , 3197 , -42  , -40
+........[r1]on_spread_change: time = 09:01:36, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:01:36, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:01:36, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:01:36.083,        0, 3156 , 3157 , -41  , -39
+...........[r1]on_spread_change: time = 09:01:39, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:01:39, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:01:39, buy = -39, sell = -37, ret=0
+
+ctp,           m1809,9003,09:01:39.611,        0, 3158 , 3159 , -39  , -37
+[r1]on_spread_change: time = 09:01:39, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:01:39, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:01:39, buy = -41, sell = -39, ret=0
+ctp,           m1901,9003,09:01:39.605,        0, 3198 , 3199 , -41  , -39
+....[r1]on_spread_change: time = 09:01:40, buy = -42, sell = -39, ret=0
+[r2]on_spread_change: time = 09:01:40, buy = -42, sell = -39, ret=0
+[r3]on_spread_change: time = 09:01:40, buy = -42, sell = -39, ret=0
+
+ctp,           m1809,9003,09:01:40.599,        0, 3157 , 3159 , -42  , -39
+.....[r1]on_spread_change: time = 09:01:41, buy = -42, sell = -40, ret=0
+[r2]on_spread_change: time = 09:01:41, buy = -42, sell = -40, ret=0
+[r3]on_spread_change: time = 09:01:41, buy = -42, sell = -40, ret=0
+
+ctp,           m1809,9003,09:01:41.590,        0, 3157 , 3158 , -42  , -40
+[r1]on_spread_change: time = 09:01:41, buy = -42, sell = -39, ret=0
+[r2]on_spread_change: time = 09:01:41, buy = -42, sell = -39, ret=0
+[r3]on_spread_change: time = 09:01:41, buy = -42, sell = -39, ret=0
+ctp,           m1901,9003,09:01:41.577,        0, 3197 , 3199 , -42  , -39
+...[r1]on_spread_change: time = 09:01:42, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:01:42, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:01:42, buy = -41, sell = -38, ret=0
+
+ctp,           m1809,9003,09:01:42.603,        0, 3158 , 3159 , -41  , -38
+[r1]on_spread_change: time = 09:01:42, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:01:42, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:01:42, buy = -40, sell = -38, ret=0
+ctp,           m1901,9003,09:01:42.603,        0, 3197 , 3198 , -40  , -38
+[r1]on_spread_change: time = 09:01:43, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:01:43, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:01:43, buy = -41, sell = -39, ret=0
+ctp,           m1809,9003,09:01:43.039,        0, 3157 , 3158 , -41  , -39
+.........[r1]on_spread_change: time = 09:01:45, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:01:45, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:01:45, buy = -40, sell = -38, ret=0
+
+ctp,           m1809,9003,09:01:45.094,        0, 3158 , 3159 , -40  , -38
+......................................spread : -40    -38
+Select command:
+1. buy,  open  :price = -37
+2. buy,  close
+3. sell, open  :price = -35
+4. sell, close
+.Press any key to quit.
+
+popd
+
+W:\indicator-server\src-r1-p\Release2
+-> r1-p.bat
+
+pushd W:\INDICA~1\src-r1-p\Release2\
+
+WindowsTraderApi.exe --simnow=false  --range="-1,-41,3,5;-25,-36,3,5;-10,-31,3,5"
+ ****** 徽商期货 交易**************************************************
+ ****** 徽商期货 交易**************************************************
+
+*************** strategy [r1] 启动 ...
+load position from file : W:\INDICA~1\src-r1-p\Release2\r1-p.txt
+ range is high = -1 ,low = -41 ,price_det = 3 ,profit = 5
+
+*************** strategy [r2] 启动 ...
+load position from file : W:\INDICA~1\src-r1-p\Release2\r2-p.txt
+ range is high = -25 ,low = -36 ,price_det = 3 ,profit = 5
+
+*************** strategy [r3] 启动 ...
+load position from file : W:\INDICA~1\src-r1-p\Release2\r3-p.txt
+ range is high = -10 ,low = -31 ,price_det = 3 ,profit = 5
+set_codes count=4
+code#  0 : m1809
+code#  1 : m1901
+code#  2 : m1805
+code#  3 : SP m1809&m1901
+--->>> OnFrontConnected
+--->>> 发送用户登录请求: 0, 成功
+--->>> OnRspUserLogin
+--->>> 获取当前交易日 = 20180427
+--->>> 投资者结算结果确认: 0, 成功
+--->>> OnRspSettlementInfoConfirm
+trader callback: event id=1
+--->>> 请求查询合约: 0, 成功
+--->>> OnRspQryInstrument: DCE.m1809-P-3500
+--->>> OnRspQryInstrument: DCE.m1809-C-3500
+--->>> OnRspQryInstrument: DCE.m1809-C-2400
+--->>> OnRspQryInstrument: DCE.m1809-P-2400
+--->>> OnRspQryInstrument: DCE.m1809-P-2850
+--->>> OnRspQryInstrument: DCE.m1809-P-2800
+--->>> OnRspQryInstrument: DCE.m1809-P-2750
+--->>> OnRspQryInstrument: DCE.m1809-P-2700
+--->>> OnRspQryInstrument: DCE.m1809-P-2650
+--->>> OnRspQryInstrument: DCE.m1809-P-2600
+--->>> OnRspQryInstrument: DCE.m1809-P-2550
+--->>> OnRspQryInstrument: DCE.m1809-P-2500
+--->>> OnRspQryInstrument: DCE.m1809-C-2950
+--->>> OnRspQryInstrument: DCE.m1809-C-2900
+--->>> OnRspQryInstrument: DCE.m1809-C-2850
+--->>> OnRspQryInstrument: DCE.m1809-C-2800
+--->>> OnRspQryInstrument: DCE.m1809-C-2750
+--->>> OnRspQryInstrument: DCE.m1809-C-2700
+--->>> OnRspQryInstrument: DCE.m1809-C-2650
+--->>> OnRspQryInstrument: DCE.m1809-C-2600
+--->>> OnRspQryInstrument: DCE.m1809-C-2550
+--->>> OnRspQryInstrument: DCE.m1809-C-2500
+--->>> OnRspQryInstrument: DCE.m1809-P-2950
+--->>> OnRspQryInstrument: DCE.m1809-P-2900
+--->>> OnRspQryInstrument: DCE.m1809-P-3000
+--->>> OnRspQryInstrument: DCE.m1809-C-3000
+--->>> OnRspQryInstrument: DCE.m1809-P-3100
+--->>> OnRspQryInstrument: DCE.m1809-C-3100
+--->>> OnRspQryInstrument: DCE.m1809-P-3150
+--->>> OnRspQryInstrument: DCE.m1809-C-3150
+--->>> OnRspQryInstrument: DCE.m1809-P-3300
+--->>> OnRspQryInstrument: DCE.m1809-P-3250
+--->>> OnRspQryInstrument: DCE.m1809-C-3300
+--->>> OnRspQryInstrument: DCE.m1809-C-3250
+--->>> OnRspQryInstrument: DCE.m1809-P-3200
+--->>> OnRspQryInstrument: DCE.m1809-C-3200
+--->>> OnRspQryInstrument: DCE.m1809-P-3600
+--->>> OnRspQryInstrument: DCE.m1809-C-3600
+--->>> OnRspQryInstrument: DCE.m1809
+--->>> OnRspQryInstrument: DCE.m1809-C-3550
+--->>> OnRspQryInstrument: DCE.m1809-P-3550
+--->>> OnRspQryInstrument: DCE.m1809-P-3450
+--->>> OnRspQryInstrument: DCE.m1809-P-3400
+--->>> OnRspQryInstrument: DCE.m1809-C-3450
+--->>> OnRspQryInstrument: DCE.m1809-C-3400
+--->>> OnRspQryInstrument: DCE.m1809-P-3050
+--->>> OnRspQryInstrument: DCE.m1809-P-2450
+--->>> OnRspQryInstrument: DCE.m1809-C-3050
+--->>> OnRspQryInstrument: DCE.m1809-C-2450
+--->>> OnRspQryInstrument: DCE.m1809-P-3350
+--->>> OnRspQryInstrument: DCE.m1809-C-3350
+--->>> 请求查询资金账户: 0, 成功
+--->>> OnRspQryTradingAccount: Available = 329964
+trader callback: event id=2
+账单确认完毕
+ ****** 徽商期货 行情**************************************************
+Press any key to order.
+--->>> OnFrontConnected
+--->>> 发送用户登录请求: 成功
+--->>> OnRspUserLogin
+--->>> 获取当前交易日 = 20180427
+--->>> 发送行情订阅请求: m1809,m1901,m1805,SP m1809&m1901, 成功
+OnRspSubMarketData
+OnRspSubMarketData
+OnRspSubMarketData
+OnRspSubMarketData
+.[r1]on_spread_change: time = 09:02:03, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:02:03, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:02:03, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:02:03.583,        0, 3198 , 3199 , -40  , -38
+.......................[r1]on_spread_change: time = 09:02:14, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:02:14, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:02:14, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:02:14.605,        0, 3158 , 3159 , -41  , -39
+..[r1]on_spread_change: time = 09:02:15, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:02:15, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:02:15, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:02:15.099,        0, 3197 , 3198 , -40  , -38
+.......[r1]on_spread_change: time = 09:02:17, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:02:17, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:02:17, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:02:17.112,        0, 3157 , 3158 , -41  , -39
+[r1]on_spread_change: time = 09:02:17, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:02:17, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:02:17, buy = -40, sell = -38, ret=0
+ctp,           m1901,9003,09:02:17.112,        0, 3196 , 3197 , -40  , -38
+............................[r1]on_spread_change: time = 09:02:22, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:02:22, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:02:22, buy = -39, sell = -37, ret=0
+
+ctp,           m1901,9003,09:02:22.594,        0, 3195 , 3196 , -39  , -37
+....[r1]on_spread_change: time = 09:02:23, buy = -40, sell = -37, ret=0
+[r2]on_spread_change: time = 09:02:23, buy = -40, sell = -37, ret=0
+[r3]on_spread_change: time = 09:02:23, buy = -40, sell = -37, ret=0
+
+ctp,           m1901,9003,09:02:23.605,        0, 3195 , 3197 , -40  , -37
+.....[r1]on_spread_change: time = 09:02:24, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:02:24, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:02:24, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:02:24.937,        0, 3196 , 3197 , -40  , -38
+......[r1]on_spread_change: time = 09:02:28, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:02:28, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:02:28, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:02:28.084,        0, 3156 , 3157 , -41  , -39
+[r1]on_spread_change: time = 09:02:28, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:02:28, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:02:28, buy = -41, sell = -38, ret=0
+ctp,           m1901,9003,09:02:28.084,        0, 3195 , 3197 , -41  , -38
+..[r1]on_spread_change: time = 09:02:28, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:02:28, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:02:28, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:02:28.592,        0, 3195 , 3196 , -40  , -38
+..........................................................................................[r1]on_spread_change: time = 09:02:50, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:02:50, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:02:50, buy = -41, sell = -38, ret=0
+
+ctp,           m1901,9003,09:02:50.584,        0, 3195 , 3197 , -41  , -38
+....[r1]on_spread_change: time = 09:02:51, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:02:51, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:02:51, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:02:51.549,        0, 3195 , 3196 , -40  , -38
+...[r1]on_spread_change: time = 09:02:52, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:02:52, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:02:52, buy = -41, sell = -38, ret=0
+
+ctp,           m1901,9003,09:02:52.912,        0, 3195 , 3197 , -41  , -38
+...........[r1]on_spread_change: time = 09:02:55, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:02:55, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:02:55, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:02:55.305,        0, 3195 , 3196 , -40  , -38
+.......[r1]on_spread_change: time = 09:02:57, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:02:57, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:02:57, buy = -41, sell = -38, ret=0
+
+ctp,           m1901,9003,09:02:57.588,        0, 3195 , 3197 , -41  , -38
+........[r1]on_spread_change: time = 09:02:59, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:02:59, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:02:59, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:02:59.084,        0, 3195 , 3196 , -40  , -38
+.......[r1]on_spread_change: time = 09:03:01, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:03:01, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:03:01, buy = -39, sell = -37, ret=0
+
+ctp,           m1809,9003,09:03:01.088,        0, 3157 , 3158 , -39  , -37
+[r1]on_spread_change: time = 09:03:01, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:03:01, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:03:01, buy = -40, sell = -38, ret=0
+ctp,           m1901,9003,09:03:01.088,        0, 3196 , 3197 , -40  , -38
+.[r1]on_spread_change: time = 09:03:01, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:03:01, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:03:01, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:03:01.545,        0, 3156 , 3157 , -41  , -39
+...................................................................[r1]on_spread_change: time = 09:03:18, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:03:18, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:03:18, buy = -40, sell = -38, ret=0
+
+ctp,           m1809,9003,09:03:18.085,        0, 3157 , 3158 , -40  , -38
+..........................[r1]on_spread_change: time = 09:03:24, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:03:24, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:03:24, buy = -41, sell = -38, ret=0
+
+ctp,           m1901,9003,09:03:24.020,        0, 3196 , 3198 , -41  , -38
+..[r1]on_spread_change: time = 09:03:24, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:03:24, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:03:24, buy = -41, sell = -39, ret=0
+
+ctp,           m1901,9003,09:03:24.575,        0, 3197 , 3198 , -41  , -39
+.................................[r1]on_spread_change: time = 09:03:33, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:03:33, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:03:33, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:03:33.075,        0, 3196 , 3197 , -40  , -38
+......[r1]on_spread_change: time = 09:03:35, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:03:35, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:03:35, buy = -41, sell = -39, ret=0
+
+ctp,           m1901,9003,09:03:35.584,        0, 3197 , 3198 , -41  , -39
+.[r1]on_spread_change: time = 09:03:36, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:03:36, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:03:36, buy = -41, sell = -38, ret=0
+
+ctp,           m1901,9003,09:03:36.108,        0, 3196 , 3198 , -41  , -38
+...[r1]on_spread_change: time = 09:03:37, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:03:37, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:03:37, buy = -41, sell = -39, ret=0
+
+ctp,           m1901,9003,09:03:37.103,        0, 3197 , 3198 , -41  , -39
+.............[r1]on_spread_change: time = 09:03:40, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:03:40, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:03:40, buy = -41, sell = -38, ret=0
+
+ctp,           m1901,9003,09:03:40.537,        0, 3196 , 3198 , -41  , -38
+......[r1]on_spread_change: time = 09:03:42, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:03:42, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:03:42, buy = -41, sell = -39, ret=0
+
+ctp,           m1901,9003,09:03:42.585,        0, 3197 , 3198 , -41  , -39
+....[r1]on_spread_change: time = 09:03:44, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:03:44, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:03:44, buy = -40, sell = -38, ret=0
+
+ctp,           m1809,9003,09:03:44.097,        0, 3158 , 3159 , -40  , -38
+.[r1]on_spread_change: time = 09:03:44, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:03:44, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:03:44, buy = -41, sell = -38, ret=0
+
+ctp,           m1809,9003,09:03:44.613,        0, 3157 , 3159 , -41  , -38
+...[r1]on_spread_change: time = 09:03:45, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:03:45, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:03:45, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:03:45.583,        0, 3157 , 3158 , -41  , -39
+..........................................[r1]on_spread_change: time = 09:03:56, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:03:56, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:03:56, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:03:56.583,        0, 3196 , 3197 , -40  , -38
+........................................................................................................................................................[r1]on_spread_change: time = 09:04:46, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:04:46, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:04:46, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:04:46.093,        0, 3156 , 3157 , -41  , -39
+[r1]on_spread_change: time = 09:04:46, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:04:46, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:04:46, buy = -40, sell = -38, ret=0
+ctp,           m1901,9003,09:04:46.093,        0, 3195 , 3196 , -40  , -38
+...................................................................[r1]on_spread_change: time = 09:05:05, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:05:05, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:05:05, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:05:05.092,        0, 3155 , 3156 , -41  , -39
+..............................................[r1]on_spread_change: time = 09:05:16, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:05:16, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:05:16, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:05:16.586,        0, 3194 , 3195 , -40  , -38
+.......................[r1]on_spread_change: time = 09:05:23, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:05:23, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:05:23, buy = -41, sell = -39, ret=0
+
+ctp,           m1901,9003,09:05:23.944,        0, 3195 , 3196 , -41  , -39
+............................[r1]on_spread_change: time = 09:05:30, buy = -42, sell = -39, ret=0
+[r2]on_spread_change: time = 09:05:30, buy = -42, sell = -39, ret=0
+[r3]on_spread_change: time = 09:05:30, buy = -42, sell = -39, ret=0
+
+ctp,           m1809,9003,09:05:30.582,        0, 3154 , 3156 , -42  , -39
+........[r1]on_spread_change: time = 09:05:32, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:05:32, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:05:32, buy = -41, sell = -38, ret=0
+
+ctp,           m1901,9003,09:05:32.113,        0, 3194 , 3195 , -41  , -38
+.[r1]on_spread_change: time = 09:05:32, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:05:32, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:05:32, buy = -40, sell = -38, ret=0
+
+ctp,           m1809,9003,09:05:32.473,        0, 3155 , 3156 , -40  , -38
+.................[r1]on_spread_change: time = 09:05:36, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:05:36, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:05:36, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:05:36.592,        0, 3154 , 3155 , -41  , -39
+........................................[r1]on_spread_change: time = 09:05:46, buy = -42, sell = -40, ret=0
+[r2]on_spread_change: time = 09:05:46, buy = -42, sell = -40, ret=0
+[r3]on_spread_change: time = 09:05:46, buy = -42, sell = -40, ret=0
+
+ctp,           m1809,9003,09:05:46.596,        0, 3153 , 3154 , -42  , -40
+[r1]on_spread_change: time = 09:05:46, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:05:46, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:05:46, buy = -41, sell = -39, ret=0
+ctp,           m1901,9003,09:05:46.590,        0, 3193 , 3194 , -41  , -39
+...........................................[r1]on_spread_change: time = 09:05:58, buy = -42, sell = -39, ret=0
+[r2]on_spread_change: time = 09:05:58, buy = -42, sell = -39, ret=0
+[r3]on_spread_change: time = 09:05:58, buy = -42, sell = -39, ret=0
+
+ctp,           m1809,9003,09:05:58.082,        0, 3152 , 3154 , -42  , -39
+.....[r1]on_spread_change: time = 09:05:59, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:05:59, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:05:59, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:05:59.091,        0, 3153 , 3154 , -41  , -39
+..[r1]on_spread_change: time = 09:05:59, buy = -42, sell = -39, ret=0
+[r2]on_spread_change: time = 09:05:59, buy = -42, sell = -39, ret=0
+[r3]on_spread_change: time = 09:05:59, buy = -42, sell = -39, ret=0
+
+ctp,           m1809,9003,09:05:59.586,        0, 3152 , 3154 , -42  , -39
+[r1]on_spread_change: time = 09:05:59, buy = -42, sell = -38, ret=0
+[r2]on_spread_change: time = 09:05:59, buy = -42, sell = -38, ret=0
+[r3]on_spread_change: time = 09:05:59, buy = -42, sell = -38, ret=0
+ctp,           m1901,9003,09:05:59.586,        0, 3192 , 3194 , -42  , -38
+..[r1]on_spread_change: time = 09:06:00, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:06:00, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:06:00, buy = -41, sell = -38, ret=0
+
+ctp,           m1809,9003,09:06:00.083,        0, 3153 , 3154 , -41  , -38
+..........[r1]on_spread_change: time = 09:06:02, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:06:02, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:06:02, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:06:02.083,        0, 3192 , 3193 , -40  , -38
+.[r1]on_spread_change: time = 09:06:02, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:06:02, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:06:02, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:06:02.530,        0, 3152 , 3153 , -41  , -39
+..................................................................[r1]on_spread_change: time = 09:06:16, buy = -42, sell = -40, ret=0
+[r2]on_spread_change: time = 09:06:16, buy = -42, sell = -40, ret=0
+[r3]on_spread_change: time = 09:06:16, buy = -42, sell = -40, ret=0
+
+ctp,           m1809,9003,09:06:16.091,        0, 3151 , 3152 , -42  , -40
+[r1]on_spread_change: time = 09:06:16, buy = -42, sell = -39, ret=0
+[r2]on_spread_change: time = 09:06:16, buy = -42, sell = -39, ret=0
+[r3]on_spread_change: time = 09:06:16, buy = -42, sell = -39, ret=0
+ctp,           m1901,9003,09:06:16.091,        0, 3191 , 3193 , -42  , -39
+..[r1]on_spread_change: time = 09:06:16, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:06:16, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:06:16, buy = -41, sell = -38, ret=0
+
+ctp,           m1809,9003,09:06:16.594,        0, 3152 , 3153 , -41  , -38
+[r1]on_spread_change: time = 09:06:16, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:06:16, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:06:16, buy = -41, sell = -39, ret=0
+ctp,           m1901,9003,09:06:16.594,        0, 3192 , 3193 , -41  , -39
+.............[r1]on_spread_change: time = 09:06:19, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:06:19, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:06:19, buy = -40, sell = -38, ret=0
+
+ctp,           m1809,9003,09:06:19.602,        0, 3153 , 3154 , -40  , -38
+....[r1]on_spread_change: time = 09:06:20, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:06:20, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:06:20, buy = -41, sell = -39, ret=0
+
+ctp,           m1901,9003,09:06:20.603,        0, 3193 , 3194 , -41  , -39
+....[r1]on_spread_change: time = 09:06:22, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:06:22, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:06:22, buy = -40, sell = -38, ret=0
+
+ctp,           m1809,9003,09:06:22.086,        0, 3154 , 3155 , -40  , -38
+[r1]on_spread_change: time = 09:06:22, buy = -40, sell = -37, ret=0
+[r2]on_spread_change: time = 09:06:22, buy = -40, sell = -37, ret=0
+[r3]on_spread_change: time = 09:06:22, buy = -40, sell = -37, ret=0
+ctp,           m1901,9003,09:06:22.086,        0, 3192 , 3194 , -40  , -37
+.[r1]on_spread_change: time = 09:06:22, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:06:22, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:06:22, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:06:22.594,        0, 3193 , 3194 , -40  , -38
+.[r1]on_spread_change: time = 09:06:23, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:06:23, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:06:23, buy = -41, sell = -39, ret=0
+
+ctp,           m1901,9003,09:06:23.093,        0, 3194 , 3195 , -41  , -39
+[r1]on_spread_change: time = 09:06:23, buy = -42, sell = -40, ret=0
+[r2]on_spread_change: time = 09:06:23, buy = -42, sell = -40, ret=0
+[r3]on_spread_change: time = 09:06:23, buy = -42, sell = -40, ret=0
+ctp,           m1809,9003,09:06:23.614,        0, 3153 , 3154 , -42  , -40
+[r1]on_spread_change: time = 09:06:23, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:06:23, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:06:23, buy = -41, sell = -38, ret=0
+ctp,           m1901,9003,09:06:23.614,        0, 3192 , 3194 , -41  , -38
+...[r1]on_spread_change: time = 09:06:24, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:06:24, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:06:24, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:06:24.093,        0, 3192 , 3193 , -40  , -38
+.[r1]on_spread_change: time = 09:06:24, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:06:24, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:06:24, buy = -41, sell = -38, ret=0
+
+ctp,           m1901,9003,09:06:24.614,        0, 3192 , 3194 , -41  , -38
+......[r1]on_spread_change: time = 09:06:25, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:06:25, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:06:25, buy = -41, sell = -39, ret=0
+
+ctp,           m1901,9003,09:06:25.825,        0, 3193 , 3194 , -41  , -39
+............[r1]on_spread_change: time = 09:06:29, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:06:29, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:06:29, buy = -41, sell = -38, ret=0
+
+ctp,           m1901,9003,09:06:29.059,        0, 3192 , 3194 , -41  , -38
+......[r1]on_spread_change: time = 09:06:30, buy = -40, sell = -37, ret=0
+[r2]on_spread_change: time = 09:06:30, buy = -40, sell = -37, ret=0
+[r3]on_spread_change: time = 09:06:30, buy = -40, sell = -37, ret=0
+
+ctp,           m1809,9003,09:06:30.610,        0, 3154 , 3155 , -40  , -37
+..[r1]on_spread_change: time = 09:06:31, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:06:31, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:06:31, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:06:31.083,        0, 3193 , 3194 , -40  , -38
+.....[r1]on_spread_change: time = 09:06:32, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:06:32, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:06:32, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:06:32.610,        0, 3153 , 3154 , -41  , -39
+...[r1]on_spread_change: time = 09:06:33, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:06:33, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:06:33, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:06:33.087,        0, 3192 , 3193 , -40  , -38
+....[r1]on_spread_change: time = 09:06:34, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:06:34, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:06:34, buy = -41, sell = -39, ret=0
+
+ctp,           m1901,9003,09:06:34.091,        0, 3193 , 3194 , -41  , -39
+..[r1]on_spread_change: time = 09:06:34, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:06:34, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:06:34, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:06:34.583,        0, 3192 , 3193 , -40  , -38
+..[r1]on_spread_change: time = 09:06:35, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:06:35, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:06:35, buy = -41, sell = -38, ret=0
+
+ctp,           m1901,9003,09:06:35.109,        0, 3192 , 3194 , -41  , -38
+.[r1]on_spread_change: time = 09:06:35, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:06:35, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:06:35, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:06:35.587,        0, 3192 , 3193 , -40  , -38
+...........................................................[r1]on_spread_change: time = 09:06:50, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:06:50, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:06:50, buy = -39, sell = -37, ret=0
+
+ctp,           m1901,9003,09:06:50.087,        0, 3191 , 3192 , -39  , -37
+.[r1]on_spread_change: time = 09:06:50, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:06:50, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:06:50, buy = -40, sell = -38, ret=0
+
+ctp,           m1809,9003,09:06:50.594,        0, 3152 , 3153 , -40  , -38
+[r1]on_spread_change: time = 09:06:50, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:06:50, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:06:50, buy = -39, sell = -37, ret=0
+ctp,           m1901,9003,09:06:50.590,        0, 3190 , 3191 , -39  , -37
+....................................[r1]on_spread_change: time = 09:06:58, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:06:58, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:06:58, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:06:58.602,        0, 3191 , 3192 , -40  , -38
+..[r1]on_spread_change: time = 09:06:59, buy = -40, sell = -37, ret=0
+[r2]on_spread_change: time = 09:06:59, buy = -40, sell = -37, ret=0
+[r3]on_spread_change: time = 09:06:59, buy = -40, sell = -37, ret=0
+
+ctp,           m1901,9003,09:06:59.082,        0, 3190 , 3192 , -40  , -37
+.[r1]on_spread_change: time = 09:06:59, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:06:59, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:06:59, buy = -39, sell = -37, ret=0
+
+ctp,           m1901,9003,09:06:59.582,        0, 3190 , 3191 , -39  , -37
+....[r1]on_spread_change: time = 09:07:00, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:07:00, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:07:00, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:07:00.582,        0, 3191 , 3192 , -40  , -38
+...[r1]on_spread_change: time = 09:07:01, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:07:01, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:07:01, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:07:01.600,        0, 3151 , 3152 , -41  , -39
+[r1]on_spread_change: time = 09:07:01, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:07:01, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:07:01, buy = -40, sell = -38, ret=0
+ctp,           m1901,9003,09:07:01.584,        0, 3190 , 3191 , -40  , -38
+...[r1]on_spread_change: time = 09:07:02, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:07:02, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:07:02, buy = -41, sell = -38, ret=0
+
+ctp,           m1901,9003,09:07:02.097,        0, 3190 , 3192 , -41  , -38
+..[r1]on_spread_change: time = 09:07:02, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:07:02, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:07:02, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:07:02.596,        0, 3190 , 3191 , -40  , -38
+............[r1]on_spread_change: time = 09:07:05, buy = -41, sell = -38, ret=0
+[r2]on_spread_change: time = 09:07:05, buy = -41, sell = -38, ret=0
+[r3]on_spread_change: time = 09:07:05, buy = -41, sell = -38, ret=0
+
+ctp,           m1901,9003,09:07:05.084,        0, 3190 , 3192 , -41  , -38
+..[r1]on_spread_change: time = 09:07:05, buy = -40, sell = -37, ret=0
+[r2]on_spread_change: time = 09:07:05, buy = -40, sell = -37, ret=0
+[r3]on_spread_change: time = 09:07:05, buy = -40, sell = -37, ret=0
+
+ctp,           m1809,9003,09:07:05.579,        0, 3152 , 3153 , -40  , -37
+[r1]on_spread_change: time = 09:07:05, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:07:05, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:07:05, buy = -40, sell = -38, ret=0
+ctp,           m1901,9003,09:07:05.579,        0, 3191 , 3192 , -40  , -38
+.....[r1]on_spread_change: time = 09:07:06, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:07:06, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:07:06, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:07:06.598,        0, 3151 , 3152 , -41  , -39
+[r1]on_spread_change: time = 09:07:06, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:07:06, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:07:06, buy = -40, sell = -38, ret=0
+ctp,           m1901,9003,09:07:06.598,        0, 3190 , 3191 , -40  , -38
+.............[r1]on_spread_change: time = 09:07:09, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:07:09, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:07:09, buy = -41, sell = -39, ret=0
+
+ctp,           m1901,9003,09:07:09.609,        0, 3191 , 3192 , -41  , -39
+.[r1]on_spread_change: time = 09:07:10, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:07:10, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:07:10, buy = -40, sell = -38, ret=0
+
+ctp,           m1809,9003,09:07:10.103,        0, 3152 , 3153 , -40  , -38
+[r1]on_spread_change: time = 09:07:10, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:07:10, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:07:10, buy = -38, sell = -36, ret=0
+ctp,           m1901,9003,09:07:10.103,        0, 3189 , 3190 , -38  , -36
+..[r1]on_spread_change: time = 09:07:10, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:07:10, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:07:10, buy = -39, sell = -37, ret=0
+
+ctp,           m1901,9003,09:07:10.609,        0, 3190 , 3191 , -39  , -37
+.................[r1]on_spread_change: time = 09:07:13, buy = -40, sell = -37, ret=0
+[r2]on_spread_change: time = 09:07:13, buy = -40, sell = -37, ret=0
+[r3]on_spread_change: time = 09:07:13, buy = -40, sell = -37, ret=0
+
+ctp,           m1901,9003,09:07:13.600,        0, 3190 , 3192 , -40  , -37
+...[r1]on_spread_change: time = 09:07:14, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:07:14, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:07:14, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:07:14.108,        0, 3191 , 3192 , -40  , -38
+................[r1]on_spread_change: time = 09:07:17, buy = -41, sell = -39, ret=0
+[r2]on_spread_change: time = 09:07:17, buy = -41, sell = -39, ret=0
+[r3]on_spread_change: time = 09:07:17, buy = -41, sell = -39, ret=0
+
+ctp,           m1809,9003,09:07:17.603,        0, 3151 , 3152 , -41  , -39
+[r1]on_spread_change: time = 09:07:17, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:07:17, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:07:17, buy = -40, sell = -38, ret=0
+ctp,           m1901,9003,09:07:17.603,        0, 3190 , 3191 , -40  , -38
+.........................[r1]on_spread_change: time = 09:07:23, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:07:23, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:07:23, buy = -39, sell = -37, ret=0
+
+ctp,           m1809,9003,09:07:23.597,        0, 3152 , 3153 , -39  , -37
+[r1]on_spread_change: time = 09:07:23, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:07:23, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:07:23, buy = -40, sell = -38, ret=0
+ctp,           m1901,9003,09:07:23.597,        0, 3191 , 3192 , -40  , -38
+...........................................[r1]on_spread_change: time = 09:07:32, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:07:32, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:07:32, buy = -39, sell = -37, ret=0
+
+ctp,           m1901,9003,09:07:32.079,        0, 3190 , 3191 , -39  , -37
+.......[r1]on_spread_change: time = 09:07:34, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:07:34, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:07:34, buy = -40, sell = -38, ret=0
+
+ctp,           m1809,9003,09:07:34.083,        0, 3151 , 3152 , -40  , -38
+.....................[r1]on_spread_change: time = 09:07:38, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:07:38, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:07:38, buy = -39, sell = -37, ret=0
+
+ctp,           m1809,9003,09:07:38.599,        0, 3152 , 3153 , -39  , -37
+...[r1]on_spread_change: time = 09:07:39, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:07:39, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:07:39, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:07:39.064,        0, 3191 , 3192 , -40  , -38
+.......[r1]on_spread_change: time = 09:07:41, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:07:41, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:07:41, buy = -39, sell = -37, ret=0
+
+ctp,           m1901,9003,09:07:41.074,        0, 3190 , 3191 , -39  , -37
+....[r1]on_spread_change: time = 09:07:42, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:07:42, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:07:42, buy = -40, sell = -38, ret=0
+
+ctp,           m1809,9003,09:07:42.582,        0, 3151 , 3152 , -40  , -38
+...............[r1]on_spread_change: time = 09:07:46, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:07:46, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:07:46, buy = -39, sell = -37, ret=0
+
+ctp,           m1901,9003,09:07:46.085,        0, 3189 , 3190 , -39  , -37
+..................................[r1]on_spread_change: time = 09:07:55, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:07:55, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:07:55, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:07:55.099,        0, 3188 , 3189 , -38  , -36
+..............[r1]on_spread_change: time = 09:07:57, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:07:57, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:07:57, buy = -39, sell = -37, ret=0
+
+ctp,           m1901,9003,09:07:57.601,        0, 3189 , 3190 , -39  , -37
+....................................................................[r1]on_spread_change: time = 09:08:14, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:08:14, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:08:14, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:08:14.588,        0, 3188 , 3189 , -38  , -36
+...........[r1]on_spread_change: time = 09:08:18, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:08:18, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:08:18, buy = -39, sell = -37, ret=0
+
+ctp,           m1809,9003,09:08:18.086,        0, 3150 , 3151 , -39  , -37
+.........[r1]on_spread_change: time = 09:08:20, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:08:20, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:08:20, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:08:20.581,        0, 3189 , 3190 , -40  , -38
+..[r1]on_spread_change: time = 09:08:21, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:08:21, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:08:21, buy = -39, sell = -37, ret=0
+
+ctp,           m1901,9003,09:08:21.082,        0, 3188 , 3189 , -39  , -37
+....[r1]on_spread_change: time = 09:08:22, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:08:22, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:08:22, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:08:22.110,        0, 3189 , 3190 , -40  , -38
+.......[r1]on_spread_change: time = 09:08:24, buy = -40, sell = -37, ret=0
+[r2]on_spread_change: time = 09:08:24, buy = -40, sell = -37, ret=0
+[r3]on_spread_change: time = 09:08:24, buy = -40, sell = -37, ret=0
+
+ctp,           m1901,9003,09:08:24.045,        0, 3188 , 3190 , -40  , -37
+........[r1]on_spread_change: time = 09:08:26, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:08:26, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:08:26, buy = -40, sell = -38, ret=0
+
+ctp,           m1901,9003,09:08:26.068,        0, 3189 , 3190 , -40  , -38
+.....[r1]on_spread_change: time = 09:08:27, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:08:27, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:08:27, buy = -39, sell = -37, ret=0
+
+ctp,           m1809,9003,09:08:27.585,        0, 3151 , 3152 , -39  , -37
+[r1]on_spread_change: time = 09:08:27, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:08:27, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:08:27, buy = -38, sell = -36, ret=0
+ctp,           m1901,9003,09:08:27.585,        0, 3188 , 3189 , -38  , -36
+..[r1]on_spread_change: time = 09:08:28, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:08:28, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:08:28, buy = -39, sell = -37, ret=0
+
+ctp,           m1901,9003,09:08:28.111,        0, 3189 , 3190 , -39  , -37
+...........[r1]on_spread_change: time = 09:08:31, buy = -39, sell = -36, ret=0
+[r2]on_spread_change: time = 09:08:31, buy = -39, sell = -36, ret=0
+[r3]on_spread_change: time = 09:08:31, buy = -39, sell = -36, ret=0
+
+ctp,           m1901,9003,09:08:31.101,        0, 3188 , 3190 , -39  , -36
+..................[r1]on_spread_change: time = 09:08:34, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:08:34, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:08:34, buy = -39, sell = -37, ret=0
+
+ctp,           m1901,9003,09:08:34.582,        0, 3189 , 3190 , -39  , -37
+.[r1]on_spread_change: time = 09:08:35, buy = -40, sell = -37, ret=0
+[r2]on_spread_change: time = 09:08:35, buy = -40, sell = -37, ret=0
+[r3]on_spread_change: time = 09:08:35, buy = -40, sell = -37, ret=0
+
+ctp,           m1809,9003,09:08:35.085,        0, 3150 , 3152 , -40  , -37
+[r1]on_spread_change: time = 09:08:35, buy = -40, sell = -36, ret=0
+[r2]on_spread_change: time = 09:08:35, buy = -40, sell = -36, ret=0
+[r3]on_spread_change: time = 09:08:35, buy = -40, sell = -36, ret=0
+ctp,           m1901,9003,09:08:35.085,        0, 3188 , 3190 , -40  , -36
+.[r1]on_spread_change: time = 09:08:35, buy = -39, sell = -36, ret=0
+[r2]on_spread_change: time = 09:08:35, buy = -39, sell = -36, ret=0
+[r3]on_spread_change: time = 09:08:35, buy = -39, sell = -36, ret=0
+
+ctp,           m1809,9003,09:08:35.612,        0, 3151 , 3152 , -39  , -36
+[r1]on_spread_change: time = 09:08:35, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:08:35, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:08:35, buy = -38, sell = -36, ret=0
+ctp,           m1901,9003,09:08:35.612,        0, 3188 , 3189 , -38  , -36
+.........................[r1]on_spread_change: time = 09:08:40, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:08:40, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:08:40, buy = -39, sell = -37, ret=0
+
+ctp,           m1809,9003,09:08:40.073,        0, 3150 , 3151 , -39  , -37
+......................[r1]on_spread_change: time = 09:08:44, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:08:44, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:08:44, buy = -38, sell = -36, ret=0
+
+ctp,           m1809,9003,09:08:44.080,        0, 3151 , 3152 , -38  , -36
+............................[r1]on_spread_change: time = 09:08:51, buy = -39, sell = -36, ret=0
+[r2]on_spread_change: time = 09:08:51, buy = -39, sell = -36, ret=0
+[r3]on_spread_change: time = 09:08:51, buy = -39, sell = -36, ret=0
+
+ctp,           m1901,9003,09:08:51.549,        0, 3188 , 3190 , -39  , -36
+.....[r1]on_spread_change: time = 09:08:53, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:08:53, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:08:53, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:08:53.584,        0, 3188 , 3189 , -38  , -36
+......[r1]on_spread_change: time = 09:08:55, buy = -39, sell = -36, ret=0
+[r2]on_spread_change: time = 09:08:55, buy = -39, sell = -36, ret=0
+[r3]on_spread_change: time = 09:08:55, buy = -39, sell = -36, ret=0
+
+ctp,           m1901,9003,09:08:55.613,        0, 3188 , 3190 , -39  , -36
+.[r1]on_spread_change: time = 09:08:56, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:08:56, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:08:56, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:08:56.081,        0, 3188 , 3189 , -38  , -36
+[r1]on_spread_change: time = 09:08:56, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:08:56, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:08:56, buy = -37, sell = -35, ret=0
+ctp,           m1809,9003,09:08:56.583,        0, 3152 , 3153 , -37  , -35
+[r1]on_spread_change: time = 09:08:56, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:08:56, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:08:56, buy = -38, sell = -36, ret=0
+ctp,           m1901,9003,09:08:56.581,        0, 3189 , 3190 , -38  , -36
+.[r1]on_spread_change: time = 09:08:57, buy = -38, sell = -35, ret=0
+[r2]on_spread_change: time = 09:08:57, buy = -38, sell = -35, ret=0
+[r3]on_spread_change: time = 09:08:57, buy = -38, sell = -35, ret=0
+
+ctp,           m1901,9003,09:08:57.072,        0, 3188 , 3190 , -38  , -35
+[r1]on_spread_change: time = 09:08:57, buy = -39, sell = -36, ret=0
+[r2]on_spread_change: time = 09:08:57, buy = -39, sell = -36, ret=0
+[r3]on_spread_change: time = 09:08:57, buy = -39, sell = -36, ret=0
+ctp,           m1809,9003,09:08:57.598,        0, 3151 , 3152 , -39  , -36
+[r1]on_spread_change: time = 09:08:57, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:08:57, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:08:57, buy = -39, sell = -37, ret=0
+ctp,           m1901,9003,09:08:57.598,        0, 3189 , 3190 , -39  , -37
+.........[r1]on_spread_change: time = 09:09:00, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:09:00, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:09:00, buy = -38, sell = -36, ret=0
+
+ctp,           m1809,9003,09:09:00.111,        0, 3152 , 3153 , -38  , -36
+.........[r1]on_spread_change: time = 09:09:02, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:09:02, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:09:02, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:09:02.087,        0, 3188 , 3189 , -37  , -35
+.[r1]on_spread_change: time = 09:09:02, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:09:02, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:09:02, buy = -38, sell = -36, ret=0
+
+ctp,           m1809,9003,09:09:02.581,        0, 3151 , 3152 , -38  , -36
+.....................................[r1]on_spread_change: time = 09:09:13, buy = -39, sell = -36, ret=0
+[r2]on_spread_change: time = 09:09:13, buy = -39, sell = -36, ret=0
+[r3]on_spread_change: time = 09:09:13, buy = -39, sell = -36, ret=0
+
+ctp,           m1901,9003,09:09:13.109,        0, 3188 , 3190 , -39  , -36
+..[r1]on_spread_change: time = 09:09:13, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:09:13, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:09:13, buy = -39, sell = -37, ret=0
+
+ctp,           m1901,9003,09:09:13.546,        0, 3189 , 3190 , -39  , -37
+.[r1]on_spread_change: time = 09:09:13, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:09:13, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:09:13, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:09:13.972,        0, 3188 , 3189 , -38  , -36
+...[r1]on_spread_change: time = 09:09:15, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:09:15, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:09:15, buy = -39, sell = -37, ret=0
+
+ctp,           m1901,9003,09:09:15.592,        0, 3189 , 3190 , -39  , -37
+...................[r1]on_spread_change: time = 09:09:21, buy = -39, sell = -35, ret=0
+[r2]on_spread_change: time = 09:09:21, buy = -39, sell = -35, ret=0
+[r3]on_spread_change: time = 09:09:21, buy = -39, sell = -35, ret=0
+
+ctp,           m1901,9003,09:09:21.080,        0, 3187 , 3190 , -39  , -35
+..[r1]on_spread_change: time = 09:09:21, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:09:21, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:09:21, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:09:21.591,        0, 3187 , 3188 , -37  , -35
+..[r1]on_spread_change: time = 09:09:22, buy = -38, sell = -35, ret=0
+[r2]on_spread_change: time = 09:09:22, buy = -38, sell = -35, ret=0
+[r3]on_spread_change: time = 09:09:22, buy = -38, sell = -35, ret=0
+
+ctp,           m1901,9003,09:09:22.080,        0, 3187 , 3189 , -38  , -35
+.[r1]on_spread_change: time = 09:09:22, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:09:22, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:09:22, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:09:22.591,        0, 3188 , 3189 , -38  , -36
+....[r1]on_spread_change: time = 09:09:23, buy = -38, sell = -35, ret=0
+[r2]on_spread_change: time = 09:09:23, buy = -38, sell = -35, ret=0
+[r3]on_spread_change: time = 09:09:23, buy = -38, sell = -35, ret=0
+
+ctp,           m1901,9003,09:09:23.587,        0, 3187 , 3189 , -38  , -35
+..[r1]on_spread_change: time = 09:09:24, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:09:24, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:09:24, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:09:24.108,        0, 3188 , 3189 , -38  , -36
+...............................................................................................[r1]on_spread_change: time = 09:09:47, buy = -39, sell = -36, ret=0
+[r2]on_spread_change: time = 09:09:47, buy = -39, sell = -36, ret=0
+[r3]on_spread_change: time = 09:09:47, buy = -39, sell = -36, ret=0
+
+ctp,           m1901,9003,09:09:47.051,        0, 3188 , 3190 , -39  , -36
+..[r1]on_spread_change: time = 09:09:47, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:09:47, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:09:47, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:09:47.601,        0, 3188 , 3189 , -38  , -36
+.......[r1]on_spread_change: time = 09:09:50, buy = -39, sell = -36, ret=0
+[r2]on_spread_change: time = 09:09:50, buy = -39, sell = -36, ret=0
+[r3]on_spread_change: time = 09:09:50, buy = -39, sell = -36, ret=0
+
+ctp,           m1901,9003,09:09:50.085,        0, 3188 , 3190 , -39  , -36
+..[r1]on_spread_change: time = 09:09:50, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:09:50, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:09:50, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:09:50.590,        0, 3188 , 3189 , -38  , -36
+..............[r1]on_spread_change: time = 09:09:54, buy = -39, sell = -36, ret=0
+[r2]on_spread_change: time = 09:09:54, buy = -39, sell = -36, ret=0
+[r3]on_spread_change: time = 09:09:54, buy = -39, sell = -36, ret=0
+
+ctp,           m1901,9003,09:09:54.579,        0, 3188 , 3190 , -39  , -36
+[r1]on_spread_change: time = 09:09:55, buy = -40, sell = -36, ret=0
+[r2]on_spread_change: time = 09:09:55, buy = -40, sell = -36, ret=0
+[r3]on_spread_change: time = 09:09:55, buy = -40, sell = -36, ret=0
+ctp,           m1809,9003,09:09:55.087,        0, 3150 , 3152 , -40  , -36
+[r1]on_spread_change: time = 09:09:55, buy = -40, sell = -37, ret=0
+[r2]on_spread_change: time = 09:09:55, buy = -40, sell = -37, ret=0
+[r3]on_spread_change: time = 09:09:55, buy = -40, sell = -37, ret=0
+ctp,           m1901,9003,09:09:55.087,        0, 3189 , 3190 , -40  , -37
+..[r1]on_spread_change: time = 09:09:55, buy = -39, sell = -36, ret=0
+[r2]on_spread_change: time = 09:09:55, buy = -39, sell = -36, ret=0
+[r3]on_spread_change: time = 09:09:55, buy = -39, sell = -36, ret=0
+
+ctp,           m1901,9003,09:09:55.580,        0, 3188 , 3189 , -39  , -36
+[r1]on_spread_change: time = 09:09:56, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:09:56, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:09:56, buy = -38, sell = -36, ret=0
+ctp,           m1809,9003,09:09:56.081,        0, 3151 , 3152 , -38  , -36
+[r1]on_spread_change: time = 09:09:56, buy = -39, sell = -36, ret=0
+[r2]on_spread_change: time = 09:09:56, buy = -39, sell = -36, ret=0
+[r3]on_spread_change: time = 09:09:56, buy = -39, sell = -36, ret=0
+ctp,           m1901,9003,09:09:56.081,        0, 3188 , 3190 , -39  , -36
+.[r1]on_spread_change: time = 09:09:56, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:09:56, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:09:56, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:09:56.606,        0, 3188 , 3189 , -38  , -36
+...................[r1]on_spread_change: time = 09:10:02, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:10:02, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:10:02, buy = -39, sell = -37, ret=0
+
+ctp,           m1809,9003,09:10:02.605,        0, 3150 , 3151 , -39  , -37
+.............[r1]on_spread_change: time = 09:10:06, buy = -40, sell = -37, ret=0
+[r2]on_spread_change: time = 09:10:06, buy = -40, sell = -37, ret=0
+[r3]on_spread_change: time = 09:10:06, buy = -40, sell = -37, ret=0
+
+ctp,           m1901,9003,09:10:06.091,        0, 3188 , 3190 , -40  , -37
+..[r1]on_spread_change: time = 09:10:06, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:10:06, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:10:06, buy = -39, sell = -37, ret=0
+
+ctp,           m1901,9003,09:10:06.581,        0, 3188 , 3189 , -39  , -37
+................................................[r1]on_spread_change: time = 09:10:21, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:10:21, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:10:21, buy = -40, sell = -38, ret=0
+
+ctp,           m1809,9003,09:10:21.606,        0, 3149 , 3150 , -40  , -38
+[r1]on_spread_change: time = 09:10:21, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:10:21, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:10:21, buy = -39, sell = -37, ret=0
+ctp,           m1901,9003,09:10:21.606,        0, 3187 , 3188 , -39  , -37
+..............[r1]on_spread_change: time = 09:10:24, buy = -39, sell = -36, ret=0
+[r2]on_spread_change: time = 09:10:24, buy = -39, sell = -36, ret=0
+[r3]on_spread_change: time = 09:10:24, buy = -39, sell = -36, ret=0
+
+ctp,           m1901,9003,09:10:24.599,        0, 3186 , 3188 , -39  , -36
+.[r1]on_spread_change: time = 09:10:25, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:10:25, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:10:25, buy = -39, sell = -37, ret=0
+
+ctp,           m1901,9003,09:10:25.111,        0, 3187 , 3188 , -39  , -37
+.........[r1]on_spread_change: time = 09:10:27, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:10:27, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:10:27, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:10:27.605,        0, 3186 , 3187 , -38  , -36
+...[r1]on_spread_change: time = 09:10:28, buy = -39, sell = -36, ret=0
+[r2]on_spread_change: time = 09:10:28, buy = -39, sell = -36, ret=0
+[r3]on_spread_change: time = 09:10:28, buy = -39, sell = -36, ret=0
+
+ctp,           m1901,9003,09:10:28.582,        0, 3186 , 3188 , -39  , -36
+..........[r1]on_spread_change: time = 09:10:31, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:10:31, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:10:31, buy = -39, sell = -37, ret=0
+
+ctp,           m1901,9003,09:10:31.606,        0, 3187 , 3188 , -39  , -37
+.[r1]on_spread_change: time = 09:10:32, buy = -39, sell = -36, ret=0
+[r2]on_spread_change: time = 09:10:32, buy = -39, sell = -36, ret=0
+[r3]on_spread_change: time = 09:10:32, buy = -39, sell = -36, ret=0
+
+ctp,           m1901,9003,09:10:32.096,        0, 3186 , 3188 , -39  , -36
+...[r1]on_spread_change: time = 09:10:33, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:10:33, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:10:33, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:10:33.540,        0, 3186 , 3187 , -38  , -36
+.......[r1]on_spread_change: time = 09:10:36, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:10:36, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:10:36, buy = -39, sell = -37, ret=0
+
+ctp,           m1901,9003,09:10:36.079,        0, 3187 , 3188 , -39  , -37
+...[r1]on_spread_change: time = 09:10:37, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:10:37, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:10:37, buy = -38, sell = -36, ret=0
+
+ctp,           m1809,9003,09:10:37.079,        0, 3150 , 3151 , -38  , -36
+...............[r1]on_spread_change: time = 09:10:40, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:10:40, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:10:40, buy = -39, sell = -37, ret=0
+
+ctp,           m1809,9003,09:10:40.587,        0, 3149 , 3150 , -39  , -37
+..[r1]on_spread_change: time = 09:10:41, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:10:41, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:10:41, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:10:41.098,        0, 3186 , 3187 , -38  , -36
+........[r1]on_spread_change: time = 09:10:44, buy = -39, sell = -36, ret=0
+[r2]on_spread_change: time = 09:10:44, buy = -39, sell = -36, ret=0
+[r3]on_spread_change: time = 09:10:44, buy = -39, sell = -36, ret=0
+
+ctp,           m1901,9003,09:10:44.078,        0, 3186 , 3188 , -39  , -36
+.......[r1]on_spread_change: time = 09:10:45, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:10:45, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:10:45, buy = -39, sell = -37, ret=0
+
+ctp,           m1901,9003,09:10:45.557,        0, 3187 , 3188 , -39  , -37
+.[r1]on_spread_change: time = 09:10:46, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:10:46, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:10:46, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:10:46.083,        0, 3186 , 3187 , -38  , -36
+.....................................................[r1]on_spread_change: time = 09:11:00, buy = -38, sell = -35, ret=0
+[r2]on_spread_change: time = 09:11:00, buy = -38, sell = -35, ret=0
+[r3]on_spread_change: time = 09:11:00, buy = -38, sell = -35, ret=0
+
+ctp,           m1901,9003,09:11:00.609,        0, 3185 , 3187 , -38  , -35
+...[r1]on_spread_change: time = 09:11:01, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:11:01, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:11:01, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:11:01.097,        0, 3186 , 3187 , -38  , -36
+.......[r1]on_spread_change: time = 09:11:02, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:11:02, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:11:02, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:11:02.081,        0, 3185 , 3186 , -37  , -35
+................................................[r1]on_spread_change: time = 09:11:10, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:11:10, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:11:10, buy = -38, sell = -36, ret=0
+
+ctp,           m1809,9003,09:11:10.078,        0, 3148 , 3149 , -38  , -36
+[r1]on_spread_change: time = 09:11:10, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:11:10, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:11:10, buy = -37, sell = -35, ret=0
+ctp,           m1901,9003,09:11:10.078,        0, 3184 , 3185 , -37  , -35
+...[r1]on_spread_change: time = 09:11:10, buy = -38, sell = -35, ret=0
+[r2]on_spread_change: time = 09:11:10, buy = -38, sell = -35, ret=0
+[r3]on_spread_change: time = 09:11:10, buy = -38, sell = -35, ret=0
+
+ctp,           m1901,9003,09:11:10.588,        0, 3184 , 3186 , -38  , -35
+..[r1]on_spread_change: time = 09:11:11, buy = -37, sell = -34, ret=0
+[r2]on_spread_change: time = 09:11:11, buy = -37, sell = -34, ret=0
+[r3]on_spread_change: time = 09:11:11, buy = -37, sell = -34, ret=0
+
+ctp,           m1809,9003,09:11:11.102,        0, 3149 , 3150 , -37  , -34
+[r1]on_spread_change: time = 09:11:11, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:11:11, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:11:11, buy = -37, sell = -35, ret=0
+ctp,           m1901,9003,09:11:11.102,        0, 3185 , 3186 , -37  , -35
+[r1]on_spread_change: time = 09:11:11, buy = -38, sell = -35, ret=0
+[r2]on_spread_change: time = 09:11:11, buy = -38, sell = -35, ret=0
+[r3]on_spread_change: time = 09:11:11, buy = -38, sell = -35, ret=0
+ctp,           m1809,9003,09:11:11.590,        0, 3148 , 3150 , -38  , -35
+..[r1]on_spread_change: time = 09:11:12, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:11:12, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:11:12, buy = -38, sell = -36, ret=0
+
+ctp,           m1809,9003,09:11:12.095,        0, 3148 , 3149 , -38  , -36
+[r1]on_spread_change: time = 09:11:12, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:11:12, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:11:12, buy = -37, sell = -35, ret=0
+ctp,           m1901,9003,09:11:12.095,        0, 3184 , 3185 , -37  , -35
+................................[r1]on_spread_change: time = 09:11:19, buy = -37, sell = -34, ret=0
+[r2]on_spread_change: time = 09:11:19, buy = -37, sell = -34, ret=0
+[r3]on_spread_change: time = 09:11:19, buy = -37, sell = -34, ret=0
+
+ctp,           m1901,9003,09:11:19.584,        0, 3183 , 3185 , -37  , -34
+........[r1]on_spread_change: time = 09:11:21, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:11:21, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:11:21, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:11:21.584,        0, 3184 , 3185 , -37  , -35
+.........
+[r1]on_spread_change: time = 09:11:24, buy = -36, sell = -34, ret=0
+--->>> 报单录入请求: instrumentID=SP m1809&m1901,close,price=-39,order ref=4, 0, 成功
+-[r2]on_spread_change: time = 09:11:24, buy = -36, sell = -34, ret=0
+--[r3]on_spread_change: time = 09:11:24, buy = -36, sell = -34, ret=0
+>
+ctp,           m1901,9003,09:11:24.029,        0, 3183 , 3184 , -36  , -34
+>>OnRtnOrder InstrumentID=SP m1809&m1901,  OrderStatus = a, IsTradingOrder == true,
+trader callback: event id=5
+--->>> OnRtnOrder InstrumentID=SP m1809&m1901,  OrderStatus = 3, IsTradingOrder == true,
+trader callback: event id=5
+--->>> OnRtnOrder InstrumentID=SP m1809&m1901,  OrderStatus = 0,
+trader callback: event id=5
+--->>> OnRtnTrade:  成交 InstrumentID=m1901,  OrderRef=4,  price = 3184,
+trader callback: event id=6
+--->>> OnRtnTrade:  成交 InstrumentID=m1809,  OrderRef=4,  price = 3148,
+trader callback: event id=6
+....................
+[r1]on_spread_change: time = 09:11:28, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:11:28, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:11:28, buy = -37, sell = -35, ret=0
+
+ctp,           m1809,9003,09:11:28.585,        0, 3147 , 3148 , -37  , -35
+..................[r1]on_spread_change: time = 09:11:33, buy = -36, sell = -34, ret=0
+[r2]on_spread_change: time = 09:11:33, buy = -36, sell = -34, ret=0
+[r3]on_spread_change: time = 09:11:33, buy = -36, sell = -34, ret=0
+
+ctp,           m1809,9003,09:11:33.588,        0, 3148 , 3149 , -36  , -34
+...[r1]on_spread_change: time = 09:11:34, buy = -38, sell = -35, ret=0
+[r2]on_spread_change: time = 09:11:34, buy = -38, sell = -35, ret=0
+[r3]on_spread_change: time = 09:11:34, buy = -38, sell = -35, ret=0
+
+ctp,           m1901,9003,09:11:34.087,        0, 3184 , 3186 , -38  , -35
+..[r1]on_spread_change: time = 09:11:34, buy = -37, sell = -34, ret=0
+[r2]on_spread_change: time = 09:11:34, buy = -37, sell = -34, ret=0
+[r3]on_spread_change: time = 09:11:34, buy = -37, sell = -34, ret=0
+
+ctp,           m1809,9003,09:11:34.588,        0, 3149 , 3150 , -37  , -34
+[r1]on_spread_change: time = 09:11:34, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:11:34, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:11:34, buy = -37, sell = -35, ret=0
+ctp,           m1901,9003,09:11:34.588,        0, 3185 , 3186 , -37  , -35
+..................................[r1]on_spread_change: time = 09:11:43, buy = -36, sell = -34, ret=0
+[r2]on_spread_change: time = 09:11:43, buy = -36, sell = -34, ret=0
+[r3]on_spread_change: time = 09:11:43, buy = -36, sell = -34, ret=0
+
+ctp,           m1809,9003,09:11:43.603,        0, 3150 , 3151 , -36  , -34
+[r1]on_spread_change: time = 09:11:43, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:11:43, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:11:43, buy = -37, sell = -35, ret=0
+ctp,           m1901,9003,09:11:43.603,        0, 3186 , 3187 , -37  , -35
+...................[r1]on_spread_change: time = 09:11:48, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:11:48, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:11:48, buy = -38, sell = -36, ret=0
+
+ctp,           m1809,9003,09:11:48.080,        0, 3149 , 3150 , -38  , -36
+[r1]on_spread_change: time = 09:11:48, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:11:48, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:11:48, buy = -37, sell = -35, ret=0
+ctp,           m1901,9003,09:11:48.080,        0, 3185 , 3186 , -37  , -35
+.....[r1]on_spread_change: time = 09:11:49, buy = -37, sell = -34, ret=0
+[r2]on_spread_change: time = 09:11:49, buy = -37, sell = -34, ret=0
+[r3]on_spread_change: time = 09:11:49, buy = -37, sell = -34, ret=0
+
+ctp,           m1901,9003,09:11:49.573,        0, 3184 , 3186 , -37  , -34
+.[r1]on_spread_change: time = 09:11:50, buy = -36, sell = -34, ret=0
+[r2]on_spread_change: time = 09:11:50, buy = -36, sell = -34, ret=0
+[r3]on_spread_change: time = 09:11:50, buy = -36, sell = -34, ret=0
+
+ctp,           m1901,9003,09:11:50.097,        0, 3184 , 3185 , -36  , -34
+.[r1]on_spread_change: time = 09:11:50, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:11:50, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:11:50, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:11:50.601,        0, 3185 , 3186 , -37  , -35
+............[r1]on_spread_change: time = 09:11:54, buy = -37, sell = -34, ret=0
+[r2]on_spread_change: time = 09:11:54, buy = -37, sell = -34, ret=0
+[r3]on_spread_change: time = 09:11:54, buy = -37, sell = -34, ret=0
+
+ctp,           m1901,9003,09:11:54.076,        0, 3184 , 3186 , -37  , -34
+...[r1]on_spread_change: time = 09:11:54, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:11:54, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:11:54, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:11:54.990,        0, 3185 , 3186 , -37  , -35
+......[r1]on_spread_change: time = 09:11:57, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:11:57, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:11:57, buy = -38, sell = -36, ret=0
+
+ctp,           m1809,9003,09:11:57.081,        0, 3148 , 3149 , -38  , -36
+.[r1]on_spread_change: time = 09:11:57, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:11:57, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:11:57, buy = -37, sell = -35, ret=0
+
+ctp,           m1809,9003,09:11:57.608,        0, 3149 , 3150 , -37  , -35
+.......................................[r1]on_spread_change: time = 09:12:05, buy = -38, sell = -35, ret=0
+[r2]on_spread_change: time = 09:12:05, buy = -38, sell = -35, ret=0
+[r3]on_spread_change: time = 09:12:05, buy = -38, sell = -35, ret=0
+
+ctp,           m1809,9003,09:12:05.579,        0, 3148 , 3150 , -38  , -35
+..[r1]on_spread_change: time = 09:12:06, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:12:06, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:12:06, buy = -38, sell = -36, ret=0
+
+ctp,           m1809,9003,09:12:06.109,        0, 3148 , 3149 , -38  , -36
+.....[r1]on_spread_change: time = 09:12:07, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:12:07, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:12:07, buy = -37, sell = -35, ret=0
+
+ctp,           m1809,9003,09:12:07.084,        0, 3149 , 3150 , -37  , -35
+...............................[r1]on_spread_change: time = 09:12:16, buy = -37, sell = -34, ret=0
+[r2]on_spread_change: time = 09:12:16, buy = -37, sell = -34, ret=0
+[r3]on_spread_change: time = 09:12:16, buy = -37, sell = -34, ret=0
+
+ctp,           m1901,9003,09:12:16.109,        0, 3184 , 3186 , -37  , -34
+......[r1]on_spread_change: time = 09:12:17, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:12:17, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:12:17, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:12:17.580,        0, 3185 , 3186 , -37  , -35
+....[r1]on_spread_change: time = 09:12:18, buy = -37, sell = -34, ret=0
+[r2]on_spread_change: time = 09:12:18, buy = -37, sell = -34, ret=0
+[r3]on_spread_change: time = 09:12:18, buy = -37, sell = -34, ret=0
+
+ctp,           m1901,9003,09:12:18.577,        0, 3184 , 3186 , -37  , -34
+.....[r1]on_spread_change: time = 09:12:19, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:12:19, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:12:19, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:12:19.585,        0, 3185 , 3186 , -37  , -35
+.............[r1]on_spread_change: time = 09:12:22, buy = -36, sell = -34, ret=0
+[r2]on_spread_change: time = 09:12:22, buy = -36, sell = -34, ret=0
+[r3]on_spread_change: time = 09:12:22, buy = -36, sell = -34, ret=0
+
+ctp,           m1901,9003,09:12:22.612,        0, 3184 , 3185 , -36  , -34
+............[r1]on_spread_change: time = 09:12:25, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:12:25, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:12:25, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:12:25.078,        0, 3185 , 3186 , -37  , -35
+......[r1]on_spread_change: time = 09:12:26, buy = -36, sell = -34, ret=0
+[r2]on_spread_change: time = 09:12:26, buy = -36, sell = -34, ret=0
+[r3]on_spread_change: time = 09:12:26, buy = -36, sell = -34, ret=0
+
+ctp,           m1901,9003,09:12:26.612,        0, 3184 , 3185 , -36  , -34
+....[r1]on_spread_change: time = 09:12:27, buy = -35, sell = -33, ret=0
+[r2]on_spread_change: time = 09:12:27, buy = -35, sell = -33, ret=0
+[r3]on_spread_change: time = 09:12:27, buy = -35, sell = -33, ret=0
+
+ctp,           m1809,9003,09:12:27.578,        0, 3150 , 3151 , -35  , -33
+[r1]on_spread_change: time = 09:12:27, buy = -36, sell = -34, ret=0
+[r2]on_spread_change: time = 09:12:27, buy = -36, sell = -34, ret=0
+[r3]on_spread_change: time = 09:12:27, buy = -36, sell = -34, ret=0
+ctp,           m1901,9003,09:12:27.578,        0, 3185 , 3186 , -36  , -34
+............[r1]on_spread_change: time = 09:12:30, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:12:30, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:12:30, buy = -37, sell = -35, ret=0
+
+ctp,           m1809,9003,09:12:30.105,        0, 3149 , 3150 , -37  , -35
+..................................................................[r1]on_spread_change: time = 09:12:46, buy = -36, sell = -34, ret=0
+[r2]on_spread_change: time = 09:12:46, buy = -36, sell = -34, ret=0
+[r3]on_spread_change: time = 09:12:46, buy = -36, sell = -34, ret=0
+
+ctp,           m1809,9003,09:12:46.578,        0, 3150 , 3151 , -36  , -34
+......[r1]on_spread_change: time = 09:12:47, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:12:47, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:12:47, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:12:47.602,        0, 3186 , 3187 , -37  , -35
+......[r1]on_spread_change: time = 09:12:49, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:12:49, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:12:49, buy = -38, sell = -36, ret=0
+
+ctp,           m1809,9003,09:12:49.612,        0, 3149 , 3150 , -38  , -36
+[r1]on_spread_change: time = 09:12:49, buy = -38, sell = -35, ret=0
+[r2]on_spread_change: time = 09:12:49, buy = -38, sell = -35, ret=0
+[r3]on_spread_change: time = 09:12:49, buy = -38, sell = -35, ret=0
+ctp,           m1901,9003,09:12:49.612,        0, 3185 , 3187 , -38  , -35
+..[r1]on_spread_change: time = 09:12:50, buy = -36, sell = -34, ret=0
+[r2]on_spread_change: time = 09:12:50, buy = -36, sell = -34, ret=0
+[r3]on_spread_change: time = 09:12:50, buy = -36, sell = -34, ret=0
+
+ctp,           m1901,9003,09:12:50.083,        0, 3184 , 3185 , -36  , -34
+............[r1]on_spread_change: time = 09:12:52, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:12:52, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:12:52, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:12:52.581,        0, 3185 , 3186 , -37  , -35
+..............................[r1]on_spread_change: time = 09:12:59, buy = -36, sell = -34, ret=0
+[r2]on_spread_change: time = 09:12:59, buy = -36, sell = -34, ret=0
+[r3]on_spread_change: time = 09:12:59, buy = -36, sell = -34, ret=0
+
+ctp,           m1809,9003,09:12:59.081,        0, 3150 , 3151 , -36  , -34
+..[r1]on_spread_change: time = 09:12:59, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:12:59, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:12:59, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:12:59.579,        0, 3186 , 3187 , -37  , -35
+....................................................................................[r1]on_spread_change: time = 09:13:28, buy = -36, sell = -34, ret=0
+[r2]on_spread_change: time = 09:13:28, buy = -36, sell = -34, ret=0
+[r3]on_spread_change: time = 09:13:28, buy = -36, sell = -34, ret=0
+
+ctp,           m1809,9003,09:13:28.108,        0, 3151 , 3152 , -36  , -34
+[r1]on_spread_change: time = 09:13:28, buy = -37, sell = -34, ret=0
+[r2]on_spread_change: time = 09:13:28, buy = -37, sell = -34, ret=0
+[r3]on_spread_change: time = 09:13:28, buy = -37, sell = -34, ret=0
+ctp,           m1901,9003,09:13:28.108,        0, 3186 , 3188 , -37  , -34
+.[r1]on_spread_change: time = 09:13:28, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:13:28, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:13:28, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:13:28.583,        0, 3187 , 3188 , -37  , -35
+.............................[r1]on_spread_change: time = 09:13:37, buy = -38, sell = -35, ret=0
+[r2]on_spread_change: time = 09:13:37, buy = -38, sell = -35, ret=0
+[r3]on_spread_change: time = 09:13:37, buy = -38, sell = -35, ret=0
+
+ctp,           m1901,9003,09:13:37.601,        0, 3187 , 3189 , -38  , -35
+......................[r1]on_spread_change: time = 09:13:42, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:13:42, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:13:42, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:13:42.976,        0, 3188 , 3189 , -38  , -36
+......................................................................................[r1]on_spread_change: time = 09:14:08, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:14:08, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:14:08, buy = -37, sell = -35, ret=0
+
+ctp,           m1809,9003,09:14:08.077,        0, 3152 , 3153 , -37  , -35
+...................[r1]on_spread_change: time = 09:14:13, buy = -38, sell = -35, ret=0
+[r2]on_spread_change: time = 09:14:13, buy = -38, sell = -35, ret=0
+[r3]on_spread_change: time = 09:14:13, buy = -38, sell = -35, ret=0
+
+ctp,           m1901,9003,09:14:13.599,        0, 3188 , 3190 , -38  , -35
+.[r1]on_spread_change: time = 09:14:14, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:14:14, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:14:14, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:14:14.064,        0, 3188 , 3189 , -37  , -35
+......[r1]on_spread_change: time = 09:14:16, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:14:16, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:14:16, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:14:16.075,        0, 3189 , 3190 , -38  , -36
+...[r1]on_spread_change: time = 09:14:17, buy = -38, sell = -35, ret=0
+[r2]on_spread_change: time = 09:14:17, buy = -38, sell = -35, ret=0
+[r3]on_spread_change: time = 09:14:17, buy = -38, sell = -35, ret=0
+
+ctp,           m1901,9003,09:14:17.060,        0, 3188 , 3190 , -38  , -35
+....[r1]on_spread_change: time = 09:14:18, buy = -37, sell = -34, ret=0
+[r2]on_spread_change: time = 09:14:18, buy = -37, sell = -34, ret=0
+[r3]on_spread_change: time = 09:14:18, buy = -37, sell = -34, ret=0
+
+ctp,           m1809,9003,09:14:18.603,        0, 3153 , 3154 , -37  , -34
+[r1]on_spread_change: time = 09:14:18, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:14:18, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:14:18, buy = -37, sell = -35, ret=0
+ctp,           m1901,9003,09:14:18.603,        0, 3189 , 3190 , -37  , -35
+.[r1]on_spread_change: time = 09:14:19, buy = -37, sell = -34, ret=0
+[r2]on_spread_change: time = 09:14:19, buy = -37, sell = -34, ret=0
+[r3]on_spread_change: time = 09:14:19, buy = -37, sell = -34, ret=0
+
+ctp,           m1901,9003,09:14:19.100,        0, 3188 , 3190 , -37  , -34
+..[r1]on_spread_change: time = 09:14:19, buy = -36, sell = -34, ret=0
+[r2]on_spread_change: time = 09:14:19, buy = -36, sell = -34, ret=0
+[r3]on_spread_change: time = 09:14:19, buy = -36, sell = -34, ret=0
+
+ctp,           m1901,9003,09:14:19.585,        0, 3188 , 3189 , -36  , -34
+.[r1]on_spread_change: time = 09:14:20, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:14:20, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:14:20, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:14:20.082,        0, 3189 , 3190 , -37  , -35
+..............................................................................[r1]on_spread_change: time = 09:14:43, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:14:43, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:14:43, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:14:43.578,        0, 3190 , 3191 , -38  , -36
+.[r1]on_spread_change: time = 09:14:44, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:14:44, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:14:44, buy = -37, sell = -35, ret=0
+
+ctp,           m1809,9003,09:14:44.111,        0, 3154 , 3155 , -37  , -35
+..........................[r1]on_spread_change: time = 09:14:49, buy = -36, sell = -34, ret=0
+[r2]on_spread_change: time = 09:14:49, buy = -36, sell = -34, ret=0
+[r3]on_spread_change: time = 09:14:49, buy = -36, sell = -34, ret=0
+
+ctp,           m1809,9003,09:14:49.604,        0, 3155 , 3156 , -36  , -34
+..[r1]on_spread_change: time = 09:14:50, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:14:50, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:14:50, buy = -37, sell = -35, ret=0
+
+ctp,           m1809,9003,09:14:50.104,        0, 3154 , 3155 , -37  , -35
+.......................[r1]on_spread_change: time = 09:14:56, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:14:56, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:14:56, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:14:56.585,        0, 3191 , 3192 , -38  , -36
+..................[r1]on_spread_change: time = 09:15:00, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:15:00, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:15:00, buy = -39, sell = -37, ret=0
+
+ctp,           m1809,9003,09:15:00.082,        0, 3153 , 3154 , -39  , -37
+[r1]on_spread_change: time = 09:15:00, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:15:00, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:15:00, buy = -38, sell = -36, ret=0
+ctp,           m1901,9003,09:15:00.082,        0, 3190 , 3191 , -38  , -36
+................[r1]on_spread_change: time = 09:15:03, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:15:03, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:15:03, buy = -37, sell = -35, ret=0
+
+ctp,           m1809,9003,09:15:03.112,        0, 3154 , 3155 , -37  , -35
+............................[r1]on_spread_change: time = 09:15:08, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:15:08, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:15:08, buy = -38, sell = -36, ret=0
+
+ctp,           m1809,9003,09:15:08.086,        0, 3153 , 3154 , -38  , -36
+.........[r1]on_spread_change: time = 09:15:09, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:15:09, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:15:09, buy = -39, sell = -37, ret=0
+
+ctp,           m1809,9003,09:15:09.594,        0, 3152 , 3153 , -39  , -37
+[r1]on_spread_change: time = 09:15:09, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:15:09, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:15:09, buy = -38, sell = -36, ret=0
+ctp,           m1901,9003,09:15:09.594,        0, 3189 , 3190 , -38  , -36
+......[r1]on_spread_change: time = 09:15:11, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:15:11, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:15:11, buy = -37, sell = -35, ret=0
+
+ctp,           m1809,9003,09:15:11.091,        0, 3153 , 3154 , -37  , -35
+...[r1]on_spread_change: time = 09:15:12, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:15:12, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:15:12, buy = -38, sell = -36, ret=0
+
+ctp,           m1809,9003,09:15:12.089,        0, 3152 , 3153 , -38  , -36
+..............................................[r1]on_spread_change: time = 09:15:24, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:15:24, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:15:24, buy = -39, sell = -37, ret=0
+
+ctp,           m1901,9003,09:15:24.081,        0, 3190 , 3191 , -39  , -37
+.........[r1]on_spread_change: time = 09:15:25, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:15:25, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:15:25, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:15:25.582,        0, 3189 , 3190 , -38  , -36
+...............................[r1]on_spread_change: time = 09:15:35, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:15:35, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:15:35, buy = -37, sell = -35, ret=0
+
+ctp,           m1809,9003,09:15:35.595,        0, 3153 , 3154 , -37  , -35
+..[r1]on_spread_change: time = 09:15:36, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:15:36, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:15:36, buy = -38, sell = -36, ret=0
+
+ctp,           m1809,9003,09:15:36.109,        0, 3152 , 3153 , -38  , -36
+.....[r1]on_spread_change: time = 09:15:37, buy = -38, sell = -35, ret=0
+[r2]on_spread_change: time = 09:15:37, buy = -38, sell = -35, ret=0
+[r3]on_spread_change: time = 09:15:37, buy = -38, sell = -35, ret=0
+
+ctp,           m1809,9003,09:15:37.099,        0, 3152 , 3154 , -38  , -35
+.[r1]on_spread_change: time = 09:15:37, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:15:37, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:15:37, buy = -37, sell = -35, ret=0
+
+ctp,           m1809,9003,09:15:37.609,        0, 3153 , 3154 , -37  , -35
+[r1]on_spread_change: time = 09:15:37, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:15:37, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:15:37, buy = -38, sell = -36, ret=0
+ctp,           m1901,9003,09:15:37.580,        0, 3190 , 3191 , -38  , -36
+.......................[r1]on_spread_change: time = 09:15:42, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:15:42, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:15:42, buy = -37, sell = -35, ret=0
+
+ctp,           m1809,9003,09:15:42.591,        0, 3154 , 3155 , -37  , -35
+...[r1]on_spread_change: time = 09:15:43, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:15:43, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:15:43, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:15:43.102,        0, 3191 , 3192 , -38  , -36
+.[r1]on_spread_change: time = 09:15:43, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:15:43, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:15:43, buy = -39, sell = -37, ret=0
+
+ctp,           m1809,9003,09:15:43.596,        0, 3153 , 3154 , -39  , -37
+[r1]on_spread_change: time = 09:15:43, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:15:43, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:15:43, buy = -38, sell = -36, ret=0
+ctp,           m1901,9003,09:15:43.596,        0, 3190 , 3191 , -38  , -36
+.........[r1]on_spread_change: time = 09:15:46, buy = -39, sell = -36, ret=0
+[r2]on_spread_change: time = 09:15:46, buy = -39, sell = -36, ret=0
+[r3]on_spread_change: time = 09:15:46, buy = -39, sell = -36, ret=0
+
+ctp,           m1901,9003,09:15:46.106,        0, 3190 , 3192 , -39  , -36
+..................[r1]on_spread_change: time = 09:15:51, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:15:51, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:15:51, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:15:51.078,        0, 3190 , 3191 , -38  , -36
+.[r1]on_spread_change: time = 09:15:51, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:15:51, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:15:51, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:15:51.579,        0, 3189 , 3190 , -37  , -35
+......[r1]on_spread_change: time = 09:15:53, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:15:53, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:15:53, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:15:53.579,        0, 3190 , 3191 , -38  , -36
+................[r1]on_spread_change: time = 09:15:57, buy = -39, sell = -36, ret=0
+[r2]on_spread_change: time = 09:15:57, buy = -39, sell = -36, ret=0
+[r3]on_spread_change: time = 09:15:57, buy = -39, sell = -36, ret=0
+
+ctp,           m1901,9003,09:15:57.577,        0, 3190 , 3192 , -39  , -36
+......[r1]on_spread_change: time = 09:15:59, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:15:59, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:15:59, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:15:59.111,        0, 3189 , 3190 , -37  , -35
+...................[r1]on_spread_change: time = 09:16:04, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:16:04, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:16:04, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:16:04.579,        0, 3190 , 3191 , -38  , -36
+.[r1]on_spread_change: time = 09:16:05, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:16:05, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:16:05, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:16:05.108,        0, 3189 , 3190 , -37  , -35
+.................[r1]on_spread_change: time = 09:16:10, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:16:10, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:16:10, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:16:10.581,        0, 3190 , 3191 , -38  , -36
+......................................[r1]on_spread_change: time = 09:16:22, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:16:22, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:16:22, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:16:22.080,        0, 3189 , 3190 , -37  , -35
+.[r1]on_spread_change: time = 09:16:22, buy = -38, sell = -35, ret=0
+[r2]on_spread_change: time = 09:16:22, buy = -38, sell = -35, ret=0
+[r3]on_spread_change: time = 09:16:22, buy = -38, sell = -35, ret=0
+
+ctp,           m1901,9003,09:16:22.571,        0, 3189 , 3191 , -38  , -35
+.[r1]on_spread_change: time = 09:16:22, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:16:22, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:16:22, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:16:22.962,        0, 3189 , 3190 , -37  , -35
+.[r1]on_spread_change: time = 09:16:23, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:16:23, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:16:23, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:16:23.577,        0, 3190 , 3191 , -38  , -36
+...[r1]on_spread_change: time = 09:16:24, buy = -38, sell = -35, ret=0
+[r2]on_spread_change: time = 09:16:24, buy = -38, sell = -35, ret=0
+[r3]on_spread_change: time = 09:16:24, buy = -38, sell = -35, ret=0
+
+ctp,           m1901,9003,09:16:24.579,        0, 3189 , 3191 , -38  , -35
+.[r1]on_spread_change: time = 09:16:25, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:16:25, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:16:25, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:16:25.020,        0, 3189 , 3190 , -37  , -35
+.......[r1]on_spread_change: time = 09:16:28, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:16:28, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:16:28, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:16:28.078,        0, 3190 , 3191 , -38  , -36
+.................................................[r1]on_spread_change: time = 09:16:41, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:16:41, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:16:41, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:16:41.578,        0, 3189 , 3190 , -37  , -35
+....................[r1]on_spread_change: time = 09:16:50, buy = -36, sell = -34, ret=0
+[r2]on_spread_change: time = 09:16:50, buy = -36, sell = -34, ret=0
+[r3]on_spread_change: time = 09:16:50, buy = -36, sell = -34, ret=0
+
+ctp,           m1809,9003,09:16:50.080,        0, 3154 , 3155 , -36  , -34
+[r1]on_spread_change: time = 09:16:50, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:16:50, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:16:50, buy = -37, sell = -35, ret=0
+ctp,           m1901,9003,09:16:50.080,        0, 3190 , 3191 , -37  , -35
+.............[r1]on_spread_change: time = 09:16:53, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:16:53, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:16:53, buy = -38, sell = -36, ret=0
+
+ctp,           m1809,9003,09:16:53.583,        0, 3153 , 3154 , -38  , -36
+..[r1]on_spread_change: time = 09:16:54, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:16:54, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:16:54, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:16:54.092,        0, 3189 , 3190 , -37  , -35
+............................................................................................................................................................................................................[r1]on_spread_change: time = 09:18:06, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:18:06, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:18:06, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:18:06.076,        0, 3190 , 3191 , -38  , -36
+..................................[r1]on_spread_change: time = 09:18:15, buy = -39, sell = -36, ret=0
+[r2]on_spread_change: time = 09:18:15, buy = -39, sell = -36, ret=0
+[r3]on_spread_change: time = 09:18:15, buy = -39, sell = -36, ret=0
+
+ctp,           m1809,9003,09:18:15.085,        0, 3152 , 3154 , -39  , -36
+...[r1]on_spread_change: time = 09:18:15, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:18:15, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:18:15, buy = -39, sell = -37, ret=0
+
+ctp,           m1809,9003,09:18:15.606,        0, 3152 , 3153 , -39  , -37
+[r1]on_spread_change: time = 09:18:15, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:18:15, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:18:15, buy = -38, sell = -36, ret=0
+ctp,           m1901,9003,09:18:15.462,        0, 3189 , 3190 , -38  , -36
+.....[r1]on_spread_change: time = 09:18:16, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:18:16, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:18:16, buy = -37, sell = -35, ret=0
+
+ctp,           m1809,9003,09:18:16.583,        0, 3153 , 3154 , -37  , -35
+...............[r1]on_spread_change: time = 09:18:20, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:18:20, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:18:20, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:18:20.110,        0, 3190 , 3191 , -38  , -36
+....................................[r1]on_spread_change: time = 09:18:31, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:18:31, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:18:31, buy = -37, sell = -35, ret=0
+
+ctp,           m1809,9003,09:18:31.578,        0, 3154 , 3155 , -37  , -35
+[r1]on_spread_change: time = 09:18:31, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:18:31, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:18:31, buy = -38, sell = -36, ret=0
+ctp,           m1901,9003,09:18:31.578,        0, 3191 , 3192 , -38  , -36
+...[r1]on_spread_change: time = 09:18:32, buy = -37, sell = -35, ret=0
+[r2]on_spread_change: time = 09:18:32, buy = -37, sell = -35, ret=0
+[r3]on_spread_change: time = 09:18:32, buy = -37, sell = -35, ret=0
+
+ctp,           m1901,9003,09:18:32.602,        0, 3190 , 3191 , -37  , -35
+[r1]on_spread_change: time = 09:18:33, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:18:33, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:18:33, buy = -38, sell = -36, ret=0
+ctp,           m1809,9003,09:18:33.091,        0, 3153 , 3154 , -38  , -36
+..........................................................................................................................................................................[r1]on_spread_change: time = 09:19:38, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:19:38, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:19:38, buy = -39, sell = -37, ret=0
+
+ctp,           m1809,9003,09:19:38.070,        0, 3152 , 3153 , -39  , -37
+......[r1]on_spread_change: time = 09:19:39, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:19:39, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:19:39, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:19:39.608,        0, 3189 , 3190 , -38  , -36
+................[r1]on_spread_change: time = 09:19:45, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:19:45, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:19:45, buy = -39, sell = -37, ret=0
+
+ctp,           m1901,9003,09:19:45.583,        0, 3190 , 3191 , -39  , -37
+[r1]on_spread_change: time = 09:19:46, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:19:46, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:19:46, buy = -38, sell = -36, ret=0
+ctp,           m1809,9003,09:19:46.070,        0, 3153 , 3154 , -38  , -36
+....................[r1]on_spread_change: time = 09:19:53, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:19:53, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:19:53, buy = -39, sell = -37, ret=0
+
+ctp,           m1901,9003,09:19:53.098,        0, 3191 , 3192 , -39  , -37
+............[r1]on_spread_change: time = 09:19:56, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:19:56, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:19:56, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:19:56.090,        0, 3190 , 3191 , -38  , -36
+.........[r1]on_spread_change: time = 09:19:59, buy = -39, sell = -36, ret=0
+[r2]on_spread_change: time = 09:19:59, buy = -39, sell = -36, ret=0
+[r3]on_spread_change: time = 09:19:59, buy = -39, sell = -36, ret=0
+
+ctp,           m1901,9003,09:19:59.079,        0, 3190 , 3192 , -39  , -36
+.[r1]on_spread_change: time = 09:19:59, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:19:59, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:19:59, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:19:59.561,        0, 3190 , 3191 , -38  , -36
+................................................................................................................................[r1]on_spread_change: time = 09:20:48, buy = -38, sell = -35, ret=0
+[r2]on_spread_change: time = 09:20:48, buy = -38, sell = -35, ret=0
+[r3]on_spread_change: time = 09:20:48, buy = -38, sell = -35, ret=0
+
+ctp,           m1901,9003,09:20:48.084,        0, 3189 , 3191 , -38  , -35
+.................[r1]on_spread_change: time = 09:20:51, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:20:51, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:20:51, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:20:51.604,        0, 3190 , 3191 , -38  , -36
+....[r1]on_spread_change: time = 09:20:53, buy = -38, sell = -35, ret=0
+[r2]on_spread_change: time = 09:20:53, buy = -38, sell = -35, ret=0
+[r3]on_spread_change: time = 09:20:53, buy = -38, sell = -35, ret=0
+
+ctp,           m1901,9003,09:20:53.362,        0, 3189 , 3191 , -38  , -35
+..........................................[r1]on_spread_change: time = 09:21:06, buy = -39, sell = -36, ret=0
+[r2]on_spread_change: time = 09:21:06, buy = -39, sell = -36, ret=0
+[r3]on_spread_change: time = 09:21:06, buy = -39, sell = -36, ret=0
+
+ctp,           m1809,9003,09:21:06.075,        0, 3152 , 3153 , -39  , -36
+..[r1]on_spread_change: time = 09:21:06, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:21:06, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:21:06, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:21:06.585,        0, 3189 , 3190 , -38  , -36
+[r1]on_spread_change: time = 09:21:07, buy = -38, sell = -35, ret=0
+[r2]on_spread_change: time = 09:21:07, buy = -38, sell = -35, ret=0
+[r3]on_spread_change: time = 09:21:07, buy = -38, sell = -35, ret=0
+ctp,           m1809,9003,09:21:07.074,        0, 3152 , 3154 , -38  , -35
+.[r1]on_spread_change: time = 09:21:07, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:21:07, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:21:07, buy = -38, sell = -36, ret=0
+
+ctp,           m1809,9003,09:21:07.574,        0, 3152 , 3153 , -38  , -36
+..................................................................................................................[r1]on_spread_change: time = 09:21:57, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:21:57, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:21:57, buy = -39, sell = -37, ret=0
+
+ctp,           m1809,9003,09:21:57.090,        0, 3151 , 3152 , -39  , -37
+...[r1]on_spread_change: time = 09:21:57, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:21:57, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:21:57, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:21:57.596,        0, 3188 , 3189 , -38  , -36
+......[r1]on_spread_change: time = 09:22:01, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:22:01, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:22:01, buy = -39, sell = -37, ret=0
+
+ctp,           m1901,9003,09:22:01.591,        0, 3189 , 3190 , -39  , -37
+..........................[r1]on_spread_change: time = 09:22:09, buy = -40, sell = -38, ret=0
+[r2]on_spread_change: time = 09:22:09, buy = -40, sell = -38, ret=0
+[r3]on_spread_change: time = 09:22:09, buy = -40, sell = -38, ret=0
+
+ctp,           m1809,9003,09:22:09.089,        0, 3150 , 3151 , -40  , -38
+[r1]on_spread_change: time = 09:22:09, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:22:09, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:22:09, buy = -39, sell = -37, ret=0
+ctp,           m1901,9003,09:22:09.089,        0, 3188 , 3189 , -39  , -37
+..[r1]on_spread_change: time = 09:22:09, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:22:09, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:22:09, buy = -38, sell = -36, ret=0
+
+ctp,           m1901,9003,09:22:09.596,        0, 3187 , 3188 , -38  , -36
+.................................[r1]on_spread_change: time = 09:22:18, buy = -39, sell = -37, ret=0
+[r2]on_spread_change: time = 09:22:18, buy = -39, sell = -37, ret=0
+[r3]on_spread_change: time = 09:22:18, buy = -39, sell = -37, ret=0
+
+ctp,           m1809,9003,09:22:18.609,        0, 3149 , 3150 , -39  , -37
+[r1]on_spread_change: time = 09:22:18, buy = -38, sell = -36, ret=0
+[r2]on_spread_change: time = 09:22:18, buy = -38, sell = -36, ret=0
+[r3]on_spread_change: time = 09:22:18, buy = -38, sell = -36, ret=0
+ctp,           m1901,9003,09:22:18.607,        0, 3186 , 3187 , -38  , -36
+......

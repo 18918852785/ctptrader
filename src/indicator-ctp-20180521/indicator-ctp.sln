@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WindowsTraderApi", "WindowsTraderApi\WindowsTraderApi.vcxproj", "{5D6D79FC-4D62-4646-85BE-9877AD90C942}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7DE4C095-3CF7-4801-83ED-25F3C255BF91} = {7DE4C095-3CF7-4801-83ED-25F3C255BF91}
+		{257EABBD-BC4C-42B4-AC26-8E5B62D13CFD} = {257EABBD-BC4C-42B4-AC26-8E5B62D13CFD}
+		{B30554D1-5BE0-4CCF-A07F-709E85E8C6E2} = {B30554D1-5BE0-4CCF-A07F-709E85E8C6E2}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WindowsMdUserApi", "WindowsMdUserApi\WindowsMdUserApi.vcxproj", "{64B7F149-ABEA-4E6D-AEB5-CC0572BA1192}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7DE4C095-3CF7-4801-83ED-25F3C255BF91} = {7DE4C095-3CF7-4801-83ED-25F3C255BF91}
+		{257EABBD-BC4C-42B4-AC26-8E5B62D13CFD} = {257EABBD-BC4C-42B4-AC26-8E5B62D13CFD}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CTP636Common", "CTP636Common\CTP636Common.vcxproj", "{7DE4C095-3CF7-4801-83ED-25F3C255BF91}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ctp-market", "ctp-market\ctp-market.vcxproj", "{257EABBD-BC4C-42B4-AC26-8E5B62D13CFD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ctp-trader", "ctp-trader\ctp-trader.vcxproj", "{B30554D1-5BE0-4CCF-A07F-709E85E8C6E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64B7F149-ABEA-4E6D-AEB5-CC0572BA1192}.Debug|Win32.ActiveCfg = Debug|Win32
+		{64B7F149-ABEA-4E6D-AEB5-CC0572BA1192}.Debug|Win32.Build.0 = Debug|Win32
+		{64B7F149-ABEA-4E6D-AEB5-CC0572BA1192}.Release|Win32.ActiveCfg = Release|Win32
+		{64B7F149-ABEA-4E6D-AEB5-CC0572BA1192}.Release|Win32.Build.0 = Release|Win32
+		{7DE4C095-3CF7-4801-83ED-25F3C255BF91}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7DE4C095-3CF7-4801-83ED-25F3C255BF91}.Debug|Win32.Build.0 = Debug|Win32
+		{7DE4C095-3CF7-4801-83ED-25F3C255BF91}.Release|Win32.ActiveCfg = Release|Win32
+		{7DE4C095-3CF7-4801-83ED-25F3C255BF91}.Release|Win32.Build.0 = Release|Win32
+		{5D6D79FC-4D62-4646-85BE-9877AD90C942}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5D6D79FC-4D62-4646-85BE-9877AD90C942}.Debug|Win32.Build.0 = Debug|Win32
+		{5D6D79FC-4D62-4646-85BE-9877AD90C942}.Release|Win32.ActiveCfg = Release|Win32
+		{5D6D79FC-4D62-4646-85BE-9877AD90C942}.Release|Win32.Build.0 = Release|Win32
+		{257EABBD-BC4C-42B4-AC26-8E5B62D13CFD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{257EABBD-BC4C-42B4-AC26-8E5B62D13CFD}.Debug|Win32.Build.0 = Debug|Win32
+		{257EABBD-BC4C-42B4-AC26-8E5B62D13CFD}.Release|Win32.ActiveCfg = Release|Win32
+		{257EABBD-BC4C-42B4-AC26-8E5B62D13CFD}.Release|Win32.Build.0 = Release|Win32
+		{B30554D1-5BE0-4CCF-A07F-709E85E8C6E2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B30554D1-5BE0-4CCF-A07F-709E85E8C6E2}.Debug|Win32.Build.0 = Debug|Win32
+		{B30554D1-5BE0-4CCF-A07F-709E85E8C6E2}.Release|Win32.ActiveCfg = Release|Win32
+		{B30554D1-5BE0-4CCF-A07F-709E85E8C6E2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

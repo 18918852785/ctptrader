@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{0536030e-a8e3-40ba-81c1-7928ce823d57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gtest">
+      <UniqueIdentifier>{ec09faf1-e818-47ba-b40d-af170b411f9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ctp-log">
+      <UniqueIdentifier>{80373dc3-8711-4458-bfb7-9dd91d72a7b7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ctp-trader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\config\bs_config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="ctp-trader-global.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TraderSpi.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ctp-trader-callback.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gtest\flags.h">
+      <Filter>gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gtest\gtest.h">
+      <Filter>gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ctp-log\ctp-log.h">
+      <Filter>ctp-log</Filter>
+    </ClInclude>
+    <ClInclude Include="ctp-order-book.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctp-trader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\config\bs_config.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\signalrcpp\hub_initor\hub_initor_impl.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\string\utf8_string.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\thread\task_thread.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\thread\thread_cond.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\thread\thread_event.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\thread\thread_mutex.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="ctp-trader-global.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TraderSpi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gtest\flags.cpp">
+      <Filter>gtest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gtest\gtest-all.cc">
+      <Filter>gtest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ctp-log\ctp-log.cpp">
+      <Filter>ctp-log</Filter>
+    </ClCompile>
+    <ClCompile Include="ctp-order-book.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
