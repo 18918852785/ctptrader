@@ -3,7 +3,7 @@
 #include "stdafx.h"
 
 
-#include "../../signalrcpp_hub/hub_factory_impl.h"
+#include "../../include/hub_factory_impl.h"
 
 
 signalrcpp::hub_factory* get_task_thread_factory()

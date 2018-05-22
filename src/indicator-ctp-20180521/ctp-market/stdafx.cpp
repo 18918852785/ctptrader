@@ -7,7 +7,7 @@
 // TODO: 在 STDAFX.H 中
 // 引用任何所需的附加头文件，而不是在此文件中引用
 
-#include "../../signalrcpp_hub/hub_factory_impl.h"
+#include "../../include/hub_factory_impl.h"
 
 
 signalrcpp::hub_factory* get_task_thread_factory()
