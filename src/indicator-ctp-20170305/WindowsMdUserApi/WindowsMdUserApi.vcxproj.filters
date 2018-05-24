@@ -3,41 +3,8 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MdSpi.cpp" />
-    <ClCompile Include="stdafx.cpp" />
-    <ClCompile Include="..\..\include\config\bs_config.cpp">
-      <Filter>include</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\include\string\utf8_string.cpp">
-      <Filter>include</Filter>
-    </ClCompile>
-    <ClCompile Include="zmq_publisher.cpp" />
-    <ClCompile Include="..\..\include\thread\task_thread.cpp">
-      <Filter>include</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\include\thread\thread_mutex.cpp">
-      <Filter>include</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\include\thread\thread_event.cpp">
-      <Filter>include</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\include\thread\thread_cond.cpp">
-      <Filter>include</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\include\signalrcpp\hub_initor\hub_initor_impl.cpp">
-      <Filter>include</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MdSpi.h" />
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="..\..\include\config\bs_config.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="zmq_publisher.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Filter Include="include">
-      <UniqueIdentifier>{7286d2ad-ace3-48cf-a821-4808f47002d2}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
 </Project>

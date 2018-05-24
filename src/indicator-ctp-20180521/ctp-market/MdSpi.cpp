@@ -69,7 +69,7 @@ void CMdSpi::SubscribeMarketData()
 
 void CMdSpi::OnRspSubMarketData(CThostFtdcSpecificInstrumentField *pSpecificInstrument, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast)
 {
-    CTP_LOG_INFO("OnRspSubMarketData" << endl);
+    CTP_LOG_INFO( "OnRspSubMarketData:"<< pSpecificInstrument->InstrumentID <<", " << (bIsLast?" End":"") << endl);
 }
 
 void CMdSpi::OnRspUnSubMarketData(CThostFtdcSpecificInstrumentField *pSpecificInstrument, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast)

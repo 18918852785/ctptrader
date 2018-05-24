@@ -1,8 +1,6 @@
 ﻿#include "MdSpi.h"
 #include <iostream>
 
-//#include "../../indicator/zmq/zmq_handler.h"
-
 using namespace std;
 
 #pragma warning(disable : 4996)
