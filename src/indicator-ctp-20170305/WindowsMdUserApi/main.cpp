@@ -31,29 +31,11 @@ void main()
 
 	//////////////////////////////////////////////////////////////////////////
 
-	auto action = [&](){
 		g_pMdApi = CThostFtdcMdApi::CreateFtdcMdApi();
 		g_pMdApi->RegisterSpi(new CMdSpi());
 		g_pMdApi->RegisterFront(strMdFront);
 		g_pMdApi->Init();
 		g_pMdApi->Join();
-	};
-
-#if _MSC_VER >= 1700 //vs2012
-    std::thread mdThread = std::thread(action);
-
-    if(mdThread.joinable())
-        mdThread.join();
-#else//vs2010
-
-	action();
-	
-	//auto th = ::thread::create_thread_ptr();
-	//th->add_task(action);
-#endif
-
-	//printf("Press any key to quit.\n");
-	//getch();
 	return;
 }
 

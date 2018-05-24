@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LocalDebuggerCommandArguments>--trade=future --simnow=1 --range="2960,2950,3,5;2970,2940,3,5" --ctp_market_code="m1809,m1901" --ctp_trade_code="m1809"</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>--trade=market --simnow=2 --range="2960,2950,3,5;2970,2940,3,5" --ctp_market_code="m1809,m1901" --ctp_trade_code="m1809"</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
     <LocalDebuggerWorkingDirectory>$(TargetDir)</LocalDebuggerWorkingDirectory>
   </PropertyGroup>

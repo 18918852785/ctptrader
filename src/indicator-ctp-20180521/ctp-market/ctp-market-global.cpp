@@ -29,7 +29,7 @@ int ctp_market_global::init()
     default:
     case 1:{
         // ****** Simnow **************************************************
-        g_strMdFront = "tcp://180.168.146.187:10031";//10010";
+        g_strMdFront = "tcp://180.168.146.187:10031";
         g_brokerId = "9999";
         g_investorId = "068854";
         g_passWord = "123456";
