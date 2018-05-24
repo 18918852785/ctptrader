@@ -6,6 +6,7 @@
 
 #include <conio.h>
 #include "MdSpi.h"
+#include "zmq_publisher.h"
 
 CThostFtdcMdApi* g_pMdApi;
 // ****** Simnow **************************************************
@@ -20,9 +21,13 @@ int iInstrumentID = 3;
 int iRequestID = 0;
 
 //////////////////////////////////////////////////////////////////////////
+zmq_publisher g_pub;
 
 void main()
 {
+	g_pub.init();
+	iInstrumentID = g_pub.m_code_count;
+	memcpy(&ppInstrumentID[0], &g_pub.m_codes[0], iInstrumentID*sizeof(char*));
 
 	//////////////////////////////////////////////////////////////////////////
 

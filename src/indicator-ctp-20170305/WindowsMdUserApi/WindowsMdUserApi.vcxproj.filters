@@ -10,6 +10,22 @@
     <ClCompile Include="..\..\include\string\utf8_string.cpp">
       <Filter>include</Filter>
     </ClCompile>
+    <ClCompile Include="zmq_publisher.cpp" />
+    <ClCompile Include="..\..\include\thread\task_thread.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\thread\thread_mutex.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\thread\thread_event.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\thread\thread_cond.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\signalrcpp\hub_initor\hub_initor_impl.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MdSpi.h" />
@@ -17,6 +33,7 @@
     <ClInclude Include="..\..\include\config\bs_config.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="zmq_publisher.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="include">

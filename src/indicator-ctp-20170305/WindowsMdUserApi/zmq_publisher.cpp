@@ -6,7 +6,9 @@
 #include "../../include/string/utf8_string.h"
 #include "../../include/config/bs_config.h"
 
-std::string zmq_command_argument(const std::string& key);
+std::string zmq_command_argument(const std::string& key){
+    return "M1809,M1901,M1905";
+}
 
 zmq_publisher::zmq_publisher()
 	:m_code_count(0)
@@ -53,17 +55,17 @@ int zmq_publisher::init()
 	}
 	else
 	{
-		m_list_codes.push_back("a1705");
-		m_list_codes.push_back("m1705");
-		m_list_codes.push_back("i1705");
+		m_list_codes.push_back("a1805");
+		m_list_codes.push_back("m1805");
+		m_list_codes.push_back("i1805");
 
 		m_list_codes.push_back("a1709");
 		m_list_codes.push_back("m1709");
-		m_list_codes.push_back("i1709");
+		m_list_codes.push_back("I1809");
 
-		m_list_codes.push_back("a1801");
-		m_list_codes.push_back("m1801");
-		m_list_codes.push_back("i1801");
+		m_list_codes.push_back("a1901");
+		m_list_codes.push_back("m1901");
+		m_list_codes.push_back("i1901");
 	}
 
 	//////////////////////////////////////////////////////////////////////////
