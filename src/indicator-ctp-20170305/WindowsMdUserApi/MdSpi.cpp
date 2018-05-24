@@ -67,7 +67,7 @@ void CMdSpi::SubscribeMarketData()
 
 void CMdSpi::OnRspSubMarketData(CThostFtdcSpecificInstrumentField *pSpecificInstrument, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast)
 {
-    cerr << "OnRspSubMarketData" << endl;
+    cerr << "OnRspSubMarketData:"<< pSpecificInstrument->InstrumentID <<", " << (bIsLast?" End":"") << endl;
 }
 
 void CMdSpi::OnRspUnSubMarketData(CThostFtdcSpecificInstrumentField *pSpecificInstrument, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast)
@@ -86,7 +86,7 @@ void CMdSpi::OnRtnDepthMarketData(CThostFtdcDepthMarketDataField *pDepthMarketDa
         pDepthMarketData->UpdateMillisec,
         pDepthMarketData->LastPrice,
         pDepthMarketData->Volume);
-	printf(msg);
+	cerr << msg;
 
 //	zmq_handler::init_pub();
 //	zmq_handler::publish_data(msg, strlen(msg));

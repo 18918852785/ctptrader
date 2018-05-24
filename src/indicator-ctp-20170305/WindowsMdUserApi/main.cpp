@@ -15,8 +15,8 @@ TThostFtdcBrokerIDType BrokerID = "9999";
 TThostFtdcInvestorIDType InvestorID = "068854";
 TThostFtdcPasswordType  Password = "123456";
 // ****************************************************************
-char *ppInstrumentID[1024] = { 0 };
-int iInstrumentID = 4;
+char *ppInstrumentID[] = {"M1809","M1901","M1905"};
+int iInstrumentID = 3;
 int iRequestID = 0;
 
 //////////////////////////////////////////////////////////////////////////
