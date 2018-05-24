@@ -6,7 +6,6 @@
 
 #include <conio.h>
 #include "MdSpi.h"
-#include "zmq_publisher.h"
 
 CThostFtdcMdApi* g_pMdApi;
 // ****** Simnow **************************************************
@@ -14,20 +13,16 @@ char strTraderFront[] = "tcp://180.168.146.187:10000";
 char strMdFront[] = "tcp://180.168.146.187:10010";
 TThostFtdcBrokerIDType BrokerID = "9999";
 TThostFtdcInvestorIDType InvestorID = "068854";
-TThostFtdcPasswordType  Password = "abc123456";
+TThostFtdcPasswordType  Password = "123456";
 // ****************************************************************
 char *ppInstrumentID[1024] = { 0 };
 int iInstrumentID = 4;
 int iRequestID = 0;
 
 //////////////////////////////////////////////////////////////////////////
-zmq_publisher g_pub;
 
 void main()
 {
-	g_pub.init();
-	iInstrumentID = g_pub.m_code_count;
-	memcpy(&ppInstrumentID[0], &g_pub.m_codes[0], iInstrumentID*sizeof(char*));
 
 	//////////////////////////////////////////////////////////////////////////
 

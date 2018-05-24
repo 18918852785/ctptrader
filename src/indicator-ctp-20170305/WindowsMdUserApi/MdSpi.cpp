@@ -1,7 +1,7 @@
 ﻿#include "MdSpi.h"
 #include <iostream>
 
-#include "../../indicator/zmq/zmq_handler.h"
+//#include "../../indicator/zmq/zmq_handler.h"
 
 using namespace std;
 
@@ -88,7 +88,7 @@ void CMdSpi::OnRtnDepthMarketData(CThostFtdcDepthMarketDataField *pDepthMarketDa
         pDepthMarketData->Volume);
 	printf(msg);
 
-	zmq_handler::init_pub();
-	zmq_handler::publish_data(msg, strlen(msg));
+//	zmq_handler::init_pub();
+//	zmq_handler::publish_data(msg, strlen(msg));
 }
 
