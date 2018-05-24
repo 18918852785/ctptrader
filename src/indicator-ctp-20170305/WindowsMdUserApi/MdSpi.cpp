@@ -75,18 +75,15 @@ void CMdSpi::OnRspUnSubMarketData(CThostFtdcSpecificInstrumentField *pSpecificIn
 
 void CMdSpi::OnRtnDepthMarketData(CThostFtdcDepthMarketDataField *pDepthMarketData)
 {
-	//printf("ExchangeID=%9s,InstrumentID=%10s, UpdateTime=%s.%03d, LastPrice=%8.2f, Volume=%6d\n",
 	char msg[1024];
 	sprintf(msg,"%s,%s,9003,%s.%03d,%.1f,%d\n",
 		"ctp",//pDepthMarketData->ExchangeID,
-		pDepthMarketData->InstrumentID,
-        pDepthMarketData->UpdateTime,
-        pDepthMarketData->UpdateMillisec,
-        pDepthMarketData->LastPrice,
-        pDepthMarketData->Volume);
+		pDepthMarketData->InstrumentID, //期货代码: m1809
+        pDepthMarketData->UpdateTime, //行情的时间
+        pDepthMarketData->UpdateMillisec,//毫秒
+        pDepthMarketData->LastPrice, //最新价格
+        pDepthMarketData->Volume//成交量
+        );
 	cerr << msg;
-
-//	zmq_handler::init_pub();
-//	zmq_handler::publish_data(msg, strlen(msg));
 }
 

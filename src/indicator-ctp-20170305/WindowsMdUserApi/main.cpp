@@ -23,5 +23,4 @@ void main()
 	g_pMdApi->RegisterFront(strMdFront);
 	g_pMdApi->Init();
 	g_pMdApi->Join();
-	return;
 }

@@ -24,5 +24,4 @@ void main()
     g_pTraderApi->RegisterFront(g_strTraderFront);
     g_pTraderApi->Init();
     g_pTraderApi->Join();
-
 }
